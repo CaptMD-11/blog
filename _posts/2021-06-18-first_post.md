@@ -1,0 +1,24 @@
+---
+layout: post
+current: post
+cover: assets/images/avient_md11.jpg
+navigation: True
+title: What is the difference between a DC-10 and an MD-10?
+date: 2021-06-18 10:18:00
+tags:
+class: post-template
+subclass: 'post'
+---
+
+
+What is the difference between a DC-10 and an MD-10?
+
+Some may have the misconception that the DC-10 and MD-10 are the same type of plane, but it turns out that they are two distinct aircraft. To look at the difference between the two trijets, we need to see why the MD-10 was created in the first place. 
+
+<!-- ![plane](assets/images/avient_md11.jpg) -->
+
+<img src="assets/images/avient_md11.jpg" width=400/>
+
+Back when FedEx had a significant number of DC-10 aircraft in their fleet (they still have quite a bit today), they also had a strong presence of MD-11’s in their fleet. As you may (or may not) know, the MD-11 had a glass cockpit, meaning that it was fitted with screens that displayed various information. Also, the MD-11 had a cockpit crew of two (the captain and first officer). However, the DC-10 did not have a glass cockpit, and it provided data to the pilots through the means of dials and other older mechanisms. The DC-10, on the other hand, had a cockpit crew of three (the captain, first officer, and flight engineer). Knowing this, FedEx approached Boeing (not McDonnell Douglas, since they were defunct) and asked them if they could overhaul the cockpits of some of their DC-10’s, so that they could be fitted with MD-11 cockpits. Hence, the MD-10 was created. 
+
+So, if you look at the externals of the DC-10 and MD-10 side-by-side, you won’t really see much of a difference. However, if you examine the cockpits of both aircraft, you will see that there is a key difference between the two. In my eyes, McDonnell Douglas trijets are some of the most beautiful aircraft ever to take to the skies, and I hope that they will keep flying for many years to come.
