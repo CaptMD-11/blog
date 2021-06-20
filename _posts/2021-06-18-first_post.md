@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/images/white_dc10.png
 navigation: True
-title: What is the difference between a DC-10 and an MD-10?
+title: What is the difference between the DC-10 and the MD-10?
 date: 2021-06-18 10:18:00
 tags:
 class: post-template
