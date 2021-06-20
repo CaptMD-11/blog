@@ -8,10 +8,12 @@ class: page-template
 subclass: 'post page'
 ---
 
-Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.
+My name is Vignesh (aka CaptMD-11) and I’m an aviation enthusiast. I am mostly into commercial aviation, and I am a fan of trijet airliners (primarily those produced by McDonnell Douglas). 
 
-> If you'd like to set up a site like this for yourself, head over to [Ghost.org](https://ghost.org/) and start a free 14 day trial to give Ghost a try!
+As many aviation geeks have their favorite aircraft manufacturer, mine has to be McDonnell Douglas. I have always liked their aircraft, since they all have an elegant touch to them. I especially admire the DC-10 and MD-11, since they are such iconic aircraft, and the shapes of their noses and cockpit windows are so aesthetic to the eye. 
 
-If you're a developer: Ghost is a completely open source (MIT) Node.js application built on a JSON API with an Ember.js admin client. It works with MySQL and SQLite, and is publicly available [on Github](https://github.com/TryGhost/ghost).
+The first aircraft I flew was a glider in Warner Springs, California, United States, in 2015. It was a very exciting experience, since I had the opportunity of piloting the plane during takeoff and the time spent in the air. It truly opened my eyes to how thrilling aviation can be! 
 
-If you need help with using Ghost, you'll find a ton of useful articles on [our knowledgebase](https://help.ghost.org/), as well as extensive [developer documentation](https://docs.ghost.org/).
+I also fly (virtually) in the X-Plane 11 flight simulator, and I am active on the X-Plane.org forums working on a project here and there. One of my latest projects include developing an MD-10-10 for X-Plane 11 with a team of collaborators. 
+
+Carnatic music also interests me greatly. I can play the violin and mridangam, and have performed a few concerts, over the past few years. 
