@@ -12,9 +12,10 @@ baseurl: /blog/
 title: CaptMD-11
 description: An Avid Aviation Enthusiast
 cover: assets/images/md11_sunset.png
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
+logo: assets/images/myLogo.png
+#logo: assets/images/blog-icon.png
+#logo_dark: assets/images/favicon.png
+#favicon: assets/images/favicon.png
 CNAME: #add cname for website to be created
 
 # Social info
