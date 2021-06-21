@@ -26,3 +26,5 @@ Carnatic music also interests me greatly. I can play the violin and mridangam, a
 Here is a link to my <a href="https://www.facebook.com/NydhruvaMusic">Facebook page</a>
 
 Here is a link to my <a href="https://www.youtube.com/user/nydhruvas">YouTube channel</a>
+
+Also, here are the links to my friends' blogs, <a href="https://seanboe.github.io/blog/">Sean Boerhout</a> and <a href="https://blog.shad0w.ml">Ayush Nayak</a>, if you would like to check theirs out too! 
