@@ -6,6 +6,10 @@ navigation: true
 logo: 'assets/images/ghost.png'
 class: page-template
 subclass: 'post page'
+sitemap:
+	lastmod: 2021-04-12T12:49:30-05:00
+	changefreq: monthly
+	priority: 1
 ---
 
 My name is Vignesh (aka CaptMD-11) and I’m an aviation enthusiast. I am mostly into commercial aviation, and I am a fan of trijet airliners (primarily those produced by McDonnell Douglas). 
