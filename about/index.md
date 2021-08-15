@@ -11,8 +11,6 @@ subclass: 'post page'
 
 My name is Vignesh (aka CaptMD-11) and I’m an aviation enthusiast. I am mostly into commercial aviation, and I am a fan of trijet airliners (primarily those produced by McDonnell Douglas). 
 
-MD-11
-
 As many aviation geeks have their favorite aircraft manufacturer, mine has to be McDonnell Douglas. I have always liked their aircraft, since they all have an elegant touch to them. I especially admire the DC-10 and MD-11, since they are such iconic aircraft, and the shapes of their noses and cockpit windows are so aesthetically pleasing to the eye. 
 
 The first aircraft I piloted was a glider in Warner Springs, California, United States, in 2015. It was a very exciting experience, since I had the opportunity of flying the airplane during takeoff and the time spent in the air. I flew the G 103 Acro, and it was a fantastic plane to fly. It truly opened my eyes to how thrilling aviation can be! 
