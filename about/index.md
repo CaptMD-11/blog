@@ -22,7 +22,7 @@ The first aircraft I piloted was a glider in Warner Springs, California, United 
 
 I also fly (virtually) in the X-Plane 11 flight simulator, and I am active on the X-Plane.org forums, working on a project here and there. One of my latest projects includes developing an MD-10-10 for X-Plane 11 with a team of collaborators. 
 
-Carnatic music also interests me greatly. I can play the violin and mridangam, and have performed a few concerts, over the past few years. 
+Carnatic music also interests me greatly. I can play the violin and mridangam, and have performed a few concerts over the past few years. 
 
 Here is a link to my <a href="https://www.facebook.com/NydhruvaMusic">Facebook page</a>
 
