@@ -10,7 +10,7 @@ class: post-template
 subclass: 'post'
 ---
 
-A quick reference for how to install liveries for X-Plane...
+A quick reference for how to install liveries in X-Plane...
 
 1. Download the livery
 2. Unzip the file
