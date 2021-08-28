@@ -12,10 +12,11 @@ subclass: 'post'
 
 A quick reference for how to install liveries in X-Plane...
 
-1. Download the livery
-2. Unzip the file
-3. Move/copy the unzipped file to X-Plane/Aircraft/Laminar Research/McDonnell Douglas MD-11/liveries/
-4. Done!
+1. Click the "Code" button in GitHub
+2. Click "Download ZIP"
+3. Unzip the file
+4. Move or copy the unzipped file to X-Plane/Aircraft/Laminar Research/McDonnell Douglas MD-11/liveries/
+5. Done!
 
 Important Information:
 
