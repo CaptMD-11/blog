@@ -61,4 +61,4 @@ Here are some screenshots of the final product:
 <br>
 
 
-Here is a <a href="https://forums.x-plane.org/index.php?/files/file/74054-world-airways-white-n271wa-md-11/">link</a> to the download page of the livery, in case you are interested :) 
+Here is a <a href="https://captmd-11.github.io/blog/liveries/">link</a> to the download page of the livery, in case you are interested :) 

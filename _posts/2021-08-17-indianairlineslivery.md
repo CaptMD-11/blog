@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/images/7.png
 navigation: True
-title: Indian Airlines Livery Pack for MD-11
+title: Independence Day Special! Indian Airlines Livery Pack for MD-11
 date: 2021-08-17 10:18:00
 tags:
 class: post-template
@@ -11,7 +11,7 @@ subclass: 'post'
 ---
 
 
-Independence Day Special!
+Indian Airlines Livery Pack for MD-11
 
 After completing my first livery, I became encouraged to make more, as it was a very fun experience and I had learnt how to use GIMP. I was thinking about what livery might look nice on the MD-11 when I thought of Indian Airlines. I've always loved the paint scheme of their livery - simple but beautiful. Their logo also caught my eye as well. 
 
@@ -60,4 +60,4 @@ After a lot of work, the project reached its finished state. Here are some scree
 <img src="assets/images/8.png" width=825 alt="photo"/>
 <br>
 
-Since I was making an Indian Airlines livery, I thought it might have been appropriate to release it on the diamond jubilee of Indian Independence. If you'd like, here is a <a href="https://forums.x-plane.org/index.php?/files/file/74269-indian-airlines-livery-pack-for-md-11-celebrating-75-years-of-indian-independence/">link</a> to the download page of the livery. I have included two versions, one with the black nose and one without. 
+Since I was making an Indian Airlines livery, I thought it might have been appropriate to release it on the diamond jubilee of Indian Independence. If you'd like, here is a <a href="https://captmd-11.github.io/blog/liveries/">link</a> to the download page of the livery. I have included two versions, one with the black nose and one without. 
