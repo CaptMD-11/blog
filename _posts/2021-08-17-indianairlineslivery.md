@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/images/7.png
 navigation: True
-title: Independence Day Special! Indian Airlines Livery Pack for MD-11
+title: Independence Day Special! 
 date: 2021-08-17 10:18:00
 tags:
 class: post-template
