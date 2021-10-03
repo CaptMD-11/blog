@@ -60,4 +60,4 @@ After a lot of work, the project reached its finished state. Here are some scree
 <img src="assets/images/8.png" width=825 alt="photo"/>
 <br>
 
-Since I was making an Indian Airlines livery, I thought it might have been appropriate to release it on the diamond jubilee of Indian Independence. If you'd like, here is a <a href="https://captmd-11.github.io/blog/liveries/">link</a> to the download page of the livery. I have included two versions, one with the black nose and one without. 
+Since I was making an Indian Airlines livery, I thought it might have been appropriate to release it on the diamond jubilee of Indian Independence. If you'd like, here is a link to the <a href="https://github.com/CaptMD-11/Indian-Airlines-Black-Nose-Overland-MD-11.git" target="_blank">black nose<a/> livery, and a link to the <a href="https://github.com/CaptMD-11/Indian-Airlines-Normal-Overland-MD-11.git" target="_blank">normal<a/> livery. 
