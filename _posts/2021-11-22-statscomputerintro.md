@@ -37,7 +37,7 @@ public void computeMean() {
 }
 </pre>
 
-and for the median: 
+Although there is a major error for the median code, as I have not considered the possibility that the values in the data set could be out of order, here is what I have so far: 
 
 <pre class="s-code-block language-java">
 public void computeMedian() {
