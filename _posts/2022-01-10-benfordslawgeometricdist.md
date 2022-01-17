@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/images/benfordshistogram.png
 navigation: True
-title: Benford's law & Geometric Distributions 
+title: Benford's Law & Geometric Distributions 
 date: 2022-01-10 10:18:00
 tags:
 class: post-template
