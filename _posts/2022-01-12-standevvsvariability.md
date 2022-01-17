@@ -37,6 +37,8 @@ Here is the graph-ready formula:
 Here is the graph of the modified formula, where sample size is on the horizontal axis (<i>n</i>-axis) and standard deviation is on the vertical axis (<i>S</i>-axis): 
 
 <img src="assets/images/standevvssamplesizegraph.png" width=850 alt="formula"/>
+<center><i>(graphed with Desmos)</i></center>
+<br>
 
 I think this visual representation shows how standard deviation and sample size are related. We see that with a relatively low sample size, there is a very high standard deviation, due to lots of potential bias. However, as we increase the sample size, the standard deviation decreases exponentially, but never reaches 0. Although the overall bias is reduced when you increase the sample size, there will always be some instances where the bias could possibly affect the stability of your distribution. This can be expressed by the following limit: 
 
