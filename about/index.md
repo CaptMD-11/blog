@@ -16,7 +16,7 @@ As many aviation geeks have their favorite aircraft manufacturer, mine has to be
 The first aircraft I piloted was a glider in Warner Springs, California, United States, in 2015. It was a very exciting experience, since I had the opportunity of flying the airplane during takeoff and the time spent in the air. I flew the G 103 Acro, and it was a fantastic plane to fly. It truly opened my eyes to how thrilling aviation can be! 
 
 
-<img src="me_glider.png" width="700" style="border-radius:5%">
+<img src="me_glider.png" width="700" style="border-radius:3%">
 <center><i>Me next to the Glider I Flew</i></center>
 <br>
 
