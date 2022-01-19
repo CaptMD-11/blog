@@ -22,7 +22,7 @@ For example, suppose you want to know the average number of plants per household
 
 If you increase your sample size to households in your state or province, then you are adding more people with varying opinions on gardening and different climates, so there will be less variability when comparing the state average to the national average. Therefore, the overall bias in your sample will reduce, as the sample size increases. 
 
-To test this out mathematically, I thought of graphing the standard deviation vs. the sample size. The problem with this is that the standard deviation formula contains two variables, <i>x</i> (which is just a data value), and <i>n</i> (which represents the sample size). In order to avoid the complexity of dealing with the 3D plane, I decided to essentially combine <i>x</i> and <i>n</i> into one variable since the domains of <i>x</i> and <i>n</i> are very similar. While <i>x</i> ∈ (-∞, +∞), <i>n</i> ∈ [1, +∞), it's evident that the domain of one of the variables must be restricted. The obvious choice was to reduce the domain of <i>x</i> to the same of that of <i>n</i>, since <i>n</i> must stay greater than or equal to 1 (you can't have a negative sample size). Therefore, my "modification" to the standard deviation function has some limitations, as it leaves out negative <i>x</i>-values, but I guess for most practical applications, this works. 
+To test this out mathematically, I thought of graphing the standard deviation vs. the sample size. The problem with this is that the standard deviation formula contains two variables, <i>x</i> (which is just a data value), and <i>n</i> (which represents the sample size). In order to avoid the complexity of dealing with the 3D plane, I decided to essentially combine <i>x</i> and <i>n</i> into one variable since the domains of <i>x</i> and <i>n</i> are very similar. While <i>x</i> ∈ (-∞, +∞), <i>n</i> ∈ (1, +∞), it's evident that the domain of one of the variables must be restricted. The obvious choice was to reduce the domain of <i>x</i> to the same of that of <i>n</i>, since <i>n</i> must stay greater than 1 (you can't have a negative sample size, and you can't have a sample size of 1 since that would make the expression undefined). Therefore, my "modification" to the standard deviation function has some limitations, as it leaves out negative <i>x</i>-values, but I guess for most practical applications, this works. 
 
 Here is my modified formula of the standard deviation, where <i>n</i> represents the sample size, and <i>S</i> represents the standard deviation function: 
 
@@ -32,7 +32,7 @@ In order to graph this, I needed to further tweak the formula. So, I set the val
 
 Here is the graph-ready formula: 
 
-<img src="assets/images/modifiedstandevfunctionformula.png" width=450 alt="formula"/>
+<img src="assets/images/graphreadystandevfunction.png" width=450 alt="formula"/>
 
 Here is the graph of the modified formula, where sample size is on the horizontal axis (<i>n</i>-axis) and standard deviation is on the vertical axis (<i>S</i>-axis): 
 
