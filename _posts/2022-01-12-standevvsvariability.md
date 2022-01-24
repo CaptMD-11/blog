@@ -32,7 +32,11 @@ In order to graph this, I needed to further tweak the formula. So, I set the val
 
 Here is the graph-ready formula: 
 
+<<<<<<< HEAD
 <img src="assets/images/modifiedstandevformula2.png" width=450 alt="formula"/>
+=======
+<img src="assets/images/graphreadystandevfunction.png" width=450 alt="formula"/>
+>>>>>>> 825c345d1caf916c9e08211d7d9d198f3443cd46
 
 Here is the graph of the modified formula, where sample size is on the horizontal axis (<i>n</i>-axis) and standard deviation is on the vertical axis (<i>S</i>-axis): 
 
