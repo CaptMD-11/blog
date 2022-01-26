@@ -19,7 +19,7 @@ I actually use <a href="https://artofproblemsolving.com/texer" target="_blank">t
 For instance, suppose I wanted to write the probability density function, as shown here: 
 
 <img src="assets/images/newprobdensityfunction.png" width=300 alt="formula"/>
-
+ 
 All I have to do is write the code that will generate the formula, and I'm done! Here is the code itself: 
 
 <pre>\begin{displaymath}
