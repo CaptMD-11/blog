@@ -9,8 +9,6 @@ subclass: 'post page'
 
 ---
 
-This is an edits. 
-
 My name is Vignesh (aka CaptMD-11) and I’m an aviation enthusiast. I am mostly into commercial aviation, and I am a fan of trijet airliners (primarily those produced by McDonnell Douglas). 
 
 As many aviation geeks have their favorite aircraft manufacturer, mine has to be McDonnell Douglas. I have always liked their aircraft, since they all have an elegant touch to them. I especially admire the DC-10 and MD-11, since they are such iconic aircraft, and the shapes of their noses and cockpit windows are so aesthetically pleasing to the eye. 
