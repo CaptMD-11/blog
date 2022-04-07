@@ -4,7 +4,7 @@ current: post
 cover: assets/images/integralandchisquaredist2.png
 navigation: True
 title: Probability under Distributions
-date: 2022-04-02 10:18:00
+date: 2022-04-06 10:18:00
 tags:
 class: post-template
 subclass: 'post'
