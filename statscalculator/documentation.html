@@ -1,0 +1,1419 @@
+---
+layout: page
+current: statscalculator
+title: VStats Documentation
+navigation: true
+logo: 'assets/images/wamd11cruisesunset.png'
+class: page-template
+subclass: 'post page'
+sitemap:
+lastmod: 2020-11-29T12:49:30-05:00
+changefreq: weekly
+priority: 1
+---
+
+<i>Methods: </i>
+<br>
+<br>
+
+<style>
+  .alternate {
+    background: #d6edff;
+  }
+</style>
+
+<ul>
+  <!-- <li>Item 1</li> -->
+  <li class="alternate"><i>
+      <p style="color:navy;">computeMean: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeMean(double[] inputData)</samp>
+    <br>
+    Returns the mean (average) of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the mean of <samp>inputData</samp>.
+  </li>
+
+
+
+
+
+  <li><i>
+      <p style="color:navy;">computeMAD: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeMAD(double[] inputData)</samp>
+    <br>
+    Returns the mean absolute deviation (MAD) of a <samp>double[]</samp>. The MAD of an array is the average distance
+    (absolute value) from each value in the array to the mean.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the MAD of <samp>inputData</samp>.
+  </li>
+
+
+
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeMedian: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeMedian(double[] inputData)</samp>
+    <br>
+    Returns the median (second quartile) of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the median of <samp>inputData</samp>.
+  </li>
+
+
+
+
+
+  <li><i>
+      <p style="color:navy;">computeMinimum: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeMinimum(double[] inputData)</samp>
+    <br>
+    Returns the minimum value of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the minimum value of <samp>inputData</samp>.
+  </li>
+
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeMaximum: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeMaximum(double[] inputData)</samp>
+    <br>
+    Returns the maximum value of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the maximum value of <samp>inputData</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeRange: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeRange(double[] inputData)</samp>
+    <br>
+    Returns the range (maximum value - minimum value) of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the range of <samp>inputData</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeVariance: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeVariance(double[] inputData)</samp>
+    <br>
+    Returns the variance of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the variance of <samp>inputData</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeStandardDeviation: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeStandardDeviation(double[] inputData)</samp>
+    <br>
+    Returns the standard deviation of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the standard deviation of <samp>inputData</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeQuartile1: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeQuartile1(double[] inputData)</samp>
+    <br>
+    Returns the first quartile of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the first quartile of <samp>inputData</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeQuartile3: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeQuartile3(double[] inputData)</samp>
+    <br>
+    Returns the third quartile of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the third quartile of <samp>inputData</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeMode: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeMode(double[] inputData)</samp>
+    <br>
+    Returns the mode (most occurring value) of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the mode of <samp>inputData</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeSumValues: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeSumValues(double[] inputData)</samp>
+    <br>
+    Returns the sum of the values of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the sum of the values in <samp>inputData</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeIQR: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeIQR(double[] inputData)</samp>
+    <br>
+    Returns the interquartile range (IQR) of a <samp>double[]</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the IQR of <samp>inputData</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeOutliers: <samp>ArrayList</samp></p>
+    </i>
+    <samp>public static ArrayList computeOutliers(double[] inputData)</samp>
+    <br>
+    Returns a <samp>Double</samp> <samp>ArrayList</samp> containing any possible outliers in a <samp>double</samp>
+    array.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a <samp>double[]</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    a <samp>Double</samp> <samp>ArrayList</samp> which contains any possible outliers in <samp>inputData</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeFactorial: <samp>int</samp></p>
+    </i>
+    <samp>public static int computeFactorial(int inputVal)</samp>
+    <br>
+    Returns the factorial of an <samp>int</samp>.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputVal</samp> - a <samp>int</samp>.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the factorial of <samp>inputVal</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeCombinations: <samp>int</samp></p>
+    </i>
+    <samp>public static int computeCombinations(int n, int r)</samp>
+    <br>
+    Returns the number of combinations possible when given the $n$-value and $r$-value (with
+    respect to the format: $_nC_r$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>n</samp> - the $n$-value in the format "$_nC_r$."
+    <br>
+    <samp>r</samp> - the $r$-value in the format "$_nC_r$."
+    <br>
+    <b>Returns: </b>
+    <br>
+    the number of combinations possible, with respect to <samp>n</samp> and <samp>r</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeBinomialPdfProb: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeBinomialPdfProb(int numTrials, int xVal, double pSuccess)</samp>
+    <br>
+    Returns the binomial probability of a single $x$-value.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>numTrials</samp> - the number of trials.
+    <br>
+    <samp>xVal</samp> - the $x$-value of interest.
+    <br>
+    <samp>pSuccess</samp> - the probability of success.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the probability of <samp>xVal</samp> occurring.
+  </li>
+
+
+
+  <li><i>
+      <p style="color:navy;">computeBinomialCdfProb: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeBinomialCdfProb(int numTrials, int inputLBound, int inputHBound, double
+      pSuccess)</samp>
+    <br>
+    Returns the binomial probability of an interval of $x$-values.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>numTrials</samp> - the number of trials.
+    <br>
+    <samp>inputLBound</samp> - the low bound $x$-value.
+    <br>
+    <samp>inputHBound</samp> - the high bound $x$-value.
+    <br>
+    <samp>pSuccess</samp> - the probability of success.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the probability of obtaining an $x$-value between <samp>inputLBound</samp> and <samp>inputHBound</samp>,
+    inclusive.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeGeometricPdfProb: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeGeometricPdfProb(int xVal, double pSuccess)</samp>
+    <br>
+    Returns the geometric probability of a single $x$-value.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>xVal</samp> - the $x$-value of interest.
+    <br>
+    <samp>pSuccess</samp> - the probability of success.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the probability of the event occurring on the <samp>xVal</samp>th try.
+  </li>
+
+
+
+  <li><i>
+      <p style="color:navy;">computeGeometricCdfProb: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeGeometricCdfProb(double pSuccess, int inputLowBound, int inputHighBound)</samp>
+    <br>
+    Returns the geometric probability of an interval of $x$-values, in a <samp>double</samp> format.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>pSuccess</samp> - the probability of success.
+    <br>
+    <samp>inputLowBound</samp> - the low bound $x$-value.
+    <br>
+    <samp>inputHighBound</samp> - the high bound $x$-value.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the probability of the event occurring on between the <samp>inputLowBound</samp>th and
+    <samp>inputHighBound</samp>th try, inclusive.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeNormalPDF: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeNormalPDF(double inputZ)</samp>
+    <br>
+    Returns the output of the probability density function (for normal distributions).
+    <br>
+    This method assumes that $\mu=0$ and $\sigma=1$.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputZ</samp> - the input value.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the normal probability density function's output when <samp>inputZ</samp> is the input.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeZProbLeftRiemann: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeZProbLeftRiemann(double inputZLow, double inputZHigh)</samp>
+    <br>
+    Returns the (highly accurate) probability approximation between two $z$-scores for the probability density function
+    (for normal distributions) using a left-endpoint Riemann sum.
+    <br>
+    This method assumes that $\mu=0$ and $\sigma=1$.
+    <br>
+    Enter large absolute value $z$-scores for the bounds, for improper integral approximation.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputZLow</samp> - the low bound $z$-score.
+    <br>
+    <samp>inputZHigh</samp> - the high bound $z$-score.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the probability between <samp>inputZLow</samp> and <samp>inputZHigh</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeZProbRightRiemann: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeZProbRightRiemann(double inputZLow, double inputZHigh)</samp>
+    <br>
+    Returns the (highly accurate) probability approximation between two $z$-scores for the probability density function
+    (for normal distributions) using a right-endpoint Riemann sum.
+    <br>
+    This method assumes that $\mu=0$ and $\sigma=1$.
+    <br>
+    Enter large absolute value $z$-scores for the bounds, for improper integral approximation.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputZLow</samp> - the low bound $z$-score.
+    <br>
+    <samp>inputZHigh</samp> - the high bound $z$-score.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the probability between <samp>inputZLow</samp> and <samp>inputZHigh</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeZProbAvgLeftRightRiemann: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeZProbAvgLeftRightRiemann(double inputZLow, double inputZHigh)</samp>
+    <br>
+    Returns the (highly accurate) probability approximation between two $z$-scores for the probability density function
+    (for normal distributions) using the average of a left-endpoint & right-endpoint Riemann sum.
+    <br>
+    This method assumes that $\mu=0$ and $\sigma=1$.
+    <br>
+    Enter large absolute value $z$-scores for the bounds, for improper integral approximation.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputZLow</samp> - the low bound $z$-score.
+    <br>
+    <samp>inputZHigh</samp> - the high bound $z$-score.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the probability between <samp>inputZLow</samp> and <samp>inputZHigh</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeZProbMidpointRiemann: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeZProbMidpointRiemann(double inputZLow, double inputZHigh)</samp>
+    <br>
+    Returns the probability approximation between two $z$-scores for the probability density function (for normal
+    distributions) using a midpoint Riemann sum (accurate to about $6$ decimal places).
+    <br>
+    This method assumes that $\mu=0$ and $\sigma=1$.
+    <br>
+    Enter large absolute value $z$-scores for the bounds, for improper integral approximation.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputZLow</samp> - the low bound $z$-score.
+    <br>
+    <samp>inputZHigh</samp> - the high bound $z$-score.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the probability between <samp>inputZLow</samp> and <samp>inputZHigh</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeZProbTrapezoidRiemann: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeZProbTrapezoidRiemann(double inputZLow, double inputZHigh)</samp>
+    <br>
+    Returns the probability approximation between two $z$-scores for the probability density function (for normal
+    distributions) using a trapezoidal Riemann sum.
+    <br>
+    This method assumes that $\mu=0$ and $\sigma=1$.
+    <br>
+    Enter large absolute value $z$-scores for the bounds, for improper integral approximation.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputZLow</samp> - the low bound $z$-score.
+    <br>
+    <samp>inputZHigh</samp> - the high bound $z$-score.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the probability between <samp>inputZLow</samp> and <samp>inputZHigh</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeInverseNormalApprox: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeInverseNormalApprox(double input)</samp>
+    <br>
+    Returns the corresponding $z$-score with respect to the left area under the probability density function (for normal
+    distributions).
+    <br>
+    This method assumes that $\mu=0$ and $\sigma=1$.
+    <br>
+    Method is only an approximation, and does not return an exact value.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>input</samp> - the area under the probability density function (to the left of the desired $z$-score).
+    <br>
+    <b>Returns: </b>
+    <br>
+    the corresponding $z$-score to the <samp>input</samp> area.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computePermutations: <samp>int</samp></p>
+    </i>
+    <samp>public static int computePermutations(int n, int r)</samp>
+    <br>
+    Returns an <samp>int</samp> which represents the number of possible permutations, when the inputs are the $n$-value
+    and the $r$-value.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>n</samp> - the $n$-value in the form "$_nP_r$."
+    <br>
+    <samp>r</samp> - $r$-value in the form "$_nP_r$."
+    <br>
+    <b>Returns: </b>
+    <br>
+    the number of permutations possible, with respect to <samp>n</samp> and <samp>r</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeDiscreteExpectedValue: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeDiscreteExpectedValue(double[] inputDataArray, double[] probabilitiesArray)</samp>
+    <br>
+    Returns the expected value of a discrete random variable.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputDataArray</samp> - an array containing the possible outcomes of the random variable.
+    <br>
+    <samp>probabilitiesArray</samp> - an array containing the probabilities of the respective possible outcomes of the
+    random variable.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the expected value ($\mu_X$) of the random variable.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeDiscreteVariance: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeDiscreteVariance(double[] inputDataArray, double[] probabilitiesArray)</samp>
+    <br>
+    Returns the variance of a discrete random variable.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputDataArray</samp> - an array containing the possible outcomes of the random variable.
+    <br>
+    <samp>probabilitiesArray</samp> - an array containing the probabilities of the respective possible outcomes of the
+    random variable.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the variance ($\sigma^2_X$) of the random variable.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeDiscreteStandardDeviation: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeDiscreteStandardDeviation(double[] inputDataArray, double[]
+      probabilitiesArray)</samp>
+    <br>
+    Returns the standard deviation of a discrete random variable.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputDataArray</samp> - an array containing the possible outcomes of the random variable.
+    <br>
+    <samp>probabilitiesArray</samp> - an array containing the probabilities of the respective possible outcomes of the
+    random variable.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the standard deviation ($\sigma_X$) of the random variable.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeRowSum: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeRowSum(double[][] inputData, int row)</samp>
+    <br>
+    Returns the sum of the elements of a row in a $2$D array ($0$-based index).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a $2$D array.
+    <br>
+    <samp>row</samp> - the row of interest.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the sum of the elements in <samp>row</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeColumnSum: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeColumnSum(double[][] inputData, int col)</samp>
+    <br>
+    Returns the sum of the elements of a column in a $2$D array ($0$-based index).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a $2$D array.
+    <br>
+    <samp>col</samp> - the col of interest.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the sum of the elements in <samp>col</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeRowProduct: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeRowProduct(double[][] inputData, int row)</samp>
+    <br>
+    Returns the product of the elements of a row in a $2$D array ($0$-based index).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a $2$D array.
+    <br>
+    <samp>row</samp> - the row of interest.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the product of the elements in <samp>row</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeColumnProduct: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeColumnProduct(double[][] inputData, int col)</samp>
+    <br>
+    Returns the product of the elements of a column in a $2$D array ($0$-based index).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputData</samp> - a $2$D array.
+    <br>
+    <samp>col</samp> - the column of interest.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the product of the elements in <samp>col</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeMatrixAddition: <samp>double[][]</samp></p>
+    </i>
+    <samp>public static double[][] computeMatrixAddition(double[][] arr1, double[][] arr2)</samp>
+    <br>
+    Returns a $2$D array containing the sum of the $2$ parameter matrices ($2$D arrays).
+    <br>
+    The matrices must have the same dimensions.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>arr1</samp> - a $2$D array.
+    <br>
+    <samp>arr2</samp> - another $2$D array.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the sum of <samp>arr1</samp> and <samp>arr2</samp>, in a $2$D array.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeMatrixSubtraction: <samp>double[][]</samp></p>
+    </i>
+    <samp>public static double[][] computeMatrixSubtraction(double[][] arr1, double[][] arr2)</samp>
+    <br>
+    Returns a $2$D array containing the difference of the $2$ parameter matrices ($2$D arrays).
+    <br>
+    The matrices must have the same dimensions.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>arr1</samp> - a $2$D array.
+    <br>
+    <samp>arr2</samp> - another $2$D array.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the difference of <samp>arr1</samp> and <samp>arr2</samp>, in a $2$D array.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeMatrixMultiplicationByScalar: <samp>double[][]</samp></p>
+    </i>
+    <samp>public static double[][] computeMatrixMultiplicationByScalar(double[][] arr, double scalar)</samp>
+    <br>
+    Returns a <samp>double</samp> $2$D array containing the product of a matrix and a scalar.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>arr1</samp> - a $2$D array.
+    <br>
+    <samp>scalar</samp> - the scalar.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the product of <samp>arr</samp> and <samp>scalar</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeSe: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeSe(double[] indVar, double[] depVar)</samp>
+    <br>
+    Returns the standard error ($S_e$) of the residuals.
+    <br>
+    This method uses linear regression to model the relationship between the $2$ variables (least-squares regression
+    line
+    format: $\hat{y} = a + bx$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>indVar</samp> - an array containing the independent variable values.
+    <br>
+    <samp>depVar</samp> - an array containing the dependent variable values.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the $S_e$ with respect to <samp>indVar</samp> and <samp>depVar</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeSumOfResidualsSquared: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeSumOfResidualsSquared(double[] indVar, double[] depVar)</samp>
+    <br>
+    Returns the sum of the residuals squared.
+    <br>
+    This method uses linear regression to model the relationship between the $2$ variables (least-squares regression
+    line
+    format: $\hat{y} = a + bx$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>indVar</samp> - an array containing the independent variable values.
+    <br>
+    <samp>depVar</samp> - an array containing the dependent variable values.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the sum of the residuals squared with respect to <samp>indVar</samp> and <samp>depVar</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeResidualValues: <samp>double[]</samp></p>
+    </i>
+    <samp>public static double[] computeResidualValues(double[] indVar, double[] depVar)</samp>
+    <br>
+    Returns an array containing the residual values.
+    <br>
+    This method uses linear regression to model the relationship between the $2$ variables (least-squares regression
+    line
+    format: $\hat{y} = a + bx$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>indVar</samp> - an array containing the independent variable values.
+    <br>
+    <samp>depVar</samp> - an array containing the dependent variable values.
+    <br>
+    <b>Returns: </b>
+    <br>
+    an array containing the residual values with respect to <samp>indVar</samp> and <samp>depVar</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeYPredictedValues: <samp>double[]</samp></p>
+    </i>
+    <samp>public static double[] computeYPredictedValues(double[] inputData)</samp>
+    <br>
+    Returns a <samp>double</samp> array containing the predicted $y$-values ($\hat{y}$).
+    <br>
+    This method uses linear regression to model the relationship between the $2$ variables (least-squares regression
+    line
+    format: $\hat{y} = a + bx$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>indVar</samp> - an array containing the independent variable values.
+    <br>
+    <samp>depVar</samp> - an array containing the dependent variable values.
+    <br>
+    <b>Returns: </b>
+    <br>
+    an array containing the predicted $y$-values with respect to <samp>indVar</samp> and <samp>depVar</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeLSRLOutput: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeLSRLOutput(double[] inputData)</samp>
+    <br>
+    Returns the predicted $y$-value ($\hat{y}$) when an $x$-value is inputted into
+    the least-squares regression line (LSRL).
+    <br>
+    This method uses linear regression to model the relationship between the $2$ variables (least-squares regression
+    line
+    format: $\hat{y} = a + bx$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>indVar</samp> - an array containing the independent variable values.
+    <br>
+    <samp>depVar</samp> - an array containing the dependent variable values.
+    <br>
+    <samp>input</samp> - the value to be inputted into the LSRL function.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the predicted $y$-value when <samp>input</samp> is the input $x$-value to the LSRL function (with respect to
+    <samp>indVar</samp> and <samp>depVar</samp>).
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">displayLSRLEquation: <samp>String</samp></p>
+    </i>
+    <samp>public static String displayLSRLEquation(double[] indVar, double[] depVar)</samp>
+    <br>
+    Returns the least-squares regression line (LSRL) equation.
+    <br>
+    This method uses linear regression to model the relationship between the $2$ variables (least-squares regression
+    line
+    format: $\hat{y} = a + bx$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>indVar</samp> - an array containing the independent variable values.
+    <br>
+    <samp>depVar</samp> - an array containing the dependent variable values.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the LSRL equation with respect to <samp>indVar</samp> and <samp>depVar</samp>.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeA: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeA(double[] indVar, double[] depVar)</samp>
+    <br>
+    Returns the $y$-intercept of the least-squares regression line (LSRL) equation.
+    <br>
+    This method uses linear regression to model the relationship between the $2$ variables (least-squares regression
+    line
+    format: $\hat{y} = a + bx$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>indVar</samp> - an array containing the independent variable values.
+    <br>
+    <samp>depVar</samp> - an array containing the dependent variable values.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the $y$-intercept of the LSRL equation, with respect to <samp>indVar</samp> and <samp>depVar</samp>.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeB: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeB(double[] indVar, double[] depVar)</samp>
+    <br>
+    Returns the slope of the least-squares regression line (LSRL) equation.
+    <br>
+    This method uses linear regression to model the relationship between the $2$ variables (least-squares regression
+    line
+    format: $\hat{y} = a + bx$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>indVar</samp> - an array containing the independent variable values.
+    <br>
+    <samp>depVar</samp> - an array containing the dependent variable values.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the slope of the LSRL equation, with respect to <samp>indVar</samp> and <samp>depVar</samp>.
+  </li>
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeR: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeR(double[] indVar, double[] depVar)</samp>
+    <br>
+    Returns the correlation coefficient ($r$-value) of the relationship between the independent and dependent variables
+    <br>
+    This method uses linear regression to model the relationship between the $2$ variables (least-squares regression
+    line
+    format: $\hat{y} = a + bx$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>indVar</samp> - an array containing the independent variable values.
+    <br>
+    <samp>depVar</samp> - an array containing the dependent variable values.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the $r$-value of the LSRL, with respect to <samp>indVar</samp> and <samp>depVar</samp>.
+  </li>
+
+  <li><i>
+      <p style="color:navy;">computeRSquared: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeRSquared(double[] indVar, double[] depVar)</samp>
+    <br>
+    Returns the $r^2$-value of the relationship between the independent and dependent variables.
+    <br>
+    This method uses linear regression to model the relationship between the $2$ variables (least-squares regression
+    line
+    format: $\hat{y} = a + bx$).
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>indVar</samp> - an array containing the independent variable values.
+    <br>
+    <samp>depVar</samp> - an array containing the dependent variable values.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the $r^2$-value of the LSRL, with respect to <samp>indVar</samp> and <samp>depVar</samp>.
+  </li>
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeZStar: <samp>double</samp></p>
+    </i>
+    <samp>public static double computeZStar(double[] inputData)</samp>
+    <br>
+    Returns a <samp>double</samp> which represents the $z$-star ($z$-critical) value when a confidence level is
+    inputted.
+    <br>
+    This method is only an approximation.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>inputConfidenceLevel</samp> - a <samp>double</samp> representing the input confidence level.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the $z$-star value with respect to <samp>inputConfidenceLevel</samp>.
+  </li>
+
+  <li><i>
+      <p style="color:navy;">computeOneMeanZConfInt: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeOneMeanZConfInt(double mu, double sigma, int sampleSize, double
+      confidenceLevel)</samp>
+    <br>
+    Returns a <samp>String</samp> which represents the confidence interval for a single mean, making use of the
+    $z$-distribution.
+    <br>
+    This method assumes that $\mu=0$ and $\sigma=1$.
+    <br>
+    This method is only an approximation.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>mu</samp> - the mean of the sample.
+    <br>
+    <samp>sigma</samp> - the standard deviation of the population.
+    <br>
+    <samp>sampleSize</samp> - the size of the sample.
+    <br>
+    <samp>confidenceLevel</samp> - the input confidence level.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the confidence interval for a single mean.
+  </li>
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeOneMeanZTestHaGreaterThanValue: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeOneMeanZTestHaGreaterThanValue(double mu, double sigma, double sampleMean,
+      int sampleSize, double alpha)</samp>
+    <br>
+    Returns the final decision (a <samp>String</samp>) of the significance test for a single mean, utilizing the
+    $z$-distribution.
+    <br>
+    For this method:
+    <p>
+    <ul>
+      <li>the null hypothesis should state that the population mean is equal to a
+        certain value.</li>
+      <li>the alternate hypothesis should state that the population mean is greater
+        than a certain value.</li>
+    </ul>
+    The decision could be to either reject the null hypothesis or fail to reject the null hypothesis.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>mu</samp> - the population mean to be tested.
+    <br>
+    <samp>sigma</samp> - the population standard deviation.
+    <br>
+    <samp>sampleMean</samp> - the mean of the sample.
+    <br>
+    <samp>sampleSize</samp> - the size of the sample.
+    <br>
+    <samp>alpha</samp> - the significance level ($\alpha$) of the test.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the final decision of the significance test.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeOneMeanZTestHaLessThanValue: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeOneMeanZTestHaLessThanValue(double mu, double sigma, double sampleMean,
+      int sampleSize, double alpha)</samp>
+    <br>
+    Returns the final decision (a <samp>String</samp>) of the significance test for a single mean, utilizing the
+    $z$-distribution.
+    <br>
+    For this method:
+    <p>
+    <ul>
+      <li>the null hypothesis should state that the population mean is equal to a
+        certain value.</li>
+      <li>the alternate hypothesis should state that the population mean is less
+        than a certain value.</li>
+    </ul>
+    The decision could be to either reject the null hypothesis or fail to reject the null hypothesis.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>mu</samp> - the population mean to be tested.
+    <br>
+    <samp>sigma</samp> - the population standard deviation.
+    <br>
+    <samp>sampleMean</samp> - the mean of the sample.
+    <br>
+    <samp>sampleSize</samp> - the size of the sample.
+    <br>
+    <samp>alpha</samp> - the significance level ($\alpha$) of the test.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the final decision of the significance test.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeOneMeanZTestHaNotEqualToValue: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeOneMeanZTestHaNotEqualToValue(double mu, double sigma, double sampleMean,
+      int sampleSize, double alpha)</samp>
+    <br>
+    Returns the final decision (a <samp>String</samp>) of the significance test for a single mean, utilizing the
+    $z$-distribution.
+    <br>
+    For this method:
+    <p>
+    <ul>
+      <li>the null hypothesis should state that the population mean is equal to a
+        certain value.</li>
+      <li>the alternate hypothesis should state that the population mean is not equal to a certain value.</li>
+    </ul>
+    The decision could be to either reject the null hypothesis or fail to reject the null hypothesis.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>mu</samp> - the population mean to be tested.
+    <br>
+    <samp>sigma</samp> - the population standard deviation.
+    <br>
+    <samp>sampleMean</samp> - the mean of the sample.
+    <br>
+    <samp>sampleSize</samp> - the size of the sample.
+    <br>
+    <samp>alpha</samp> - the significance level ($\alpha$) of the test.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the final decision of the significance test.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeOnePropZConfInt: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeOnePropZConfInt(double pHat, int sampleSize, double confidenceLevel)</samp>
+    <br>
+    Returns a <samp>String</samp> which represents the confidence interval for estimating a single population
+    proportion.
+    <br>
+    This method is only an approximation.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>pHat</samp> - the sample proportion.
+    <br>
+    <samp>sampleSize</samp> - the size of the sample.
+    <br>
+    <samp>confidenceLevel</samp> - the confidence level needed.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the confidence interval, where <samp>pHat</samp> is the center of the interval.
+  </li>
+
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeOnePropZTestP0&#x0338LessThanValue: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeOnePropZTestP0LessThanValue(double pHat, double pNought, double sampleSize,
+      double alpha)</samp>
+    <br>
+    Returns the final decision (a <samp>String</samp>) of the significance test for a single proportion, utilizing the
+    $z$-distribution.
+    <br>
+    For this method:
+    <p>
+    <ul>
+      <li>the null hypothesis should state that the population proportion is equal to a
+        certain value.</li>
+      <li>the alternate hypothesis should state that the population proportion is less than a certain value.</li>
+    </ul>
+    The decision could be to either reject the null hypothesis or fail to reject the null hypothesis.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>pHat</samp> - the sample propotion.
+    <br>
+    <samp>pNought</samp> - the population propotion to be tested.
+    <br>
+    <samp>sampleSize</samp> - the size of the sample.
+    <br>
+    <samp>alpha</samp> - the significance level ($\alpha$) of the test.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the final decision of the significance test.
+  </li>
+
+
+
+  <li><i>
+      <p style="color:navy;">computeOnePropZTestP0&#x0338GreaterThanValue: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeOnePropZTestP0GreaterThanValue(double pHat, double pNought, double sampleSize,
+      double alpha)</samp>
+    <br>
+    Returns the final decision (a <samp>String</samp>) of the significance test for a single proportion, utilizing the
+    $z$-distribution.
+    <br>
+    For this method:
+    <p>
+    <ul>
+      <li>the null hypothesis should state that the population proportion is equal to a
+        certain value.</li>
+      <li>the alternate hypothesis should state that the population proportion is greater than a certain value.</li>
+    </ul>
+    The decision could be to either reject the null hypothesis or fail to reject the null hypothesis.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>pHat</samp> - the sample propotion.
+    <br>
+    <samp>pNought</samp> - the population propotion to be tested.
+    <br>
+    <samp>sampleSize</samp> - the size of the sample.
+    <br>
+    <samp>alpha</samp> - the significance level ($\alpha$) of the test.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the final decision of the significance test.
+  </li>
+
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeOnePropZTestP0&#x0338NotEqualToValue: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeOnePropZTestP0NotEqualToValue(double pHat, double pNought, double sampleSize,
+      double alpha)</samp>
+    <br>
+    Returns the final decision (a <samp>String</samp>) of the significance test for a single proportion, utilizing the
+    $z$-distribution.
+    <br>
+    For this method:
+    <p>
+    <ul>
+      <li>the null hypothesis should state that the population proportion is equal to a
+        certain value.</li>
+      <li>the alternate hypothesis should state that the population proportion is not equal to a certain value.</li>
+    </ul>
+    The decision could be to either reject the null hypothesis or fail to reject the null hypothesis.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>pHat</samp> - the sample propotion.
+    <br>
+    <samp>pNought</samp> - the population propotion to be tested.
+    <br>
+    <samp>sampleSize</samp> - the size of the sample.
+    <br>
+    <samp>alpha</samp> - the significance level ($\alpha$) of the test.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the final decision of the significance test.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeTwoPropZTestP1LessThanP2: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeTwoPropZTestP1LessThanP2(int successes1, int sampleSize1, int successes2,
+      int sampleSize2, double alpha)</samp>
+    <br>
+    Returns the final decision (a <samp>String</samp>) of the significance test
+    for $2$ proportions, utilizing the $z$-distribution.
+    <p>
+      For this method:
+
+    <p>
+
+    <ul>
+      <li>the null hypothesis should state that the population proportions are
+        equal to each other.</li>
+      <li>the alternate hypothesis should state that one population proportion $\left(p_1\right)$
+        is less than the other population proportion $\left(p_2\right)$.</li>
+    </ul>
+    The decision could be to either reject the null hypothesis or fail to reject
+    the null hypothesis.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>successes1</samp> - the number of successes in the sample, with respect to $\left(p_1\right)$.
+    <br>
+    <samp>sampleSize1</samp> - the size of the sample, with respect to $\left(p_1\right)$.
+    <br>
+    <samp>successes2</samp> - the number of successes in the sample, with respect to $\left(p_2\right)$.
+    <br>
+    <samp>sampleSize2</samp> - the size of the sample, with respect to $\left(p_2\right)$.
+    <br>
+    <samp>alpha</samp> - the significance level ($\alpha$) of the test.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the final decision of the significance test.
+  </li>
+
+
+  <li class="alternate"><i>
+      <p style="color:navy;">computeTwoPropZTestP1GreaterThanP2: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeTwoPropZTestP1GreaterThanP2(int successes1, int sampleSize1, int successes2,
+      int sampleSize2, double alpha)</samp>
+    <br>
+    Returns the final decision (a <samp>String</samp>) of the significance test
+    for $2$ proportions, utilizing the $z$-distribution.
+    <p>
+      For this method:
+
+    <p>
+
+    <ul>
+      <li>the null hypothesis should state that the population proportions are
+        equal to each other.</li>
+      <li>the alternate hypothesis should state that one population proportion $\left(p_1\right)$
+        is greater than the other population proportion $\left(p_2\right)$.</li>
+    </ul>
+    The decision could be to either reject the null hypothesis or fail to reject
+    the null hypothesis.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>successes1</samp> - the number of successes in the sample, with respect to $\left(p_1\right)$.
+    <br>
+    <samp>sampleSize1</samp> - the size of the sample, with respect to $\left(p_1\right)$.
+    <br>
+    <samp>successes2</samp> - the number of successes in the sample, with respect to $\left(p_2\right)$.
+    <br>
+    <samp>sampleSize2</samp> - the size of the sample, with respect to $\left(p_2\right)$.
+    <br>
+    <samp>alpha</samp> - the significance level ($\alpha$) of the test.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the final decision of the significance test.
+  </li>
+
+
+  <li><i>
+      <p style="color:navy;">computeTwoPropZTestP1NotEqualToP2: <samp>String</samp></p>
+    </i>
+    <samp>public static String computeTwoPropZTestP1NotEqualToP2(int successes1, int sampleSize1, int successes2,
+      int sampleSize2, double alpha)</samp>
+    <br>
+    Returns the final decision (a <samp>String</samp>) of the significance test
+    for $2$ proportions, utilizing the $z$-distribution.
+    <p>
+      For this method:
+
+    <p>
+
+    <ul>
+      <li>the null hypothesis should state that the population proportions are
+        equal to each other.</li>
+      <li>the alternate hypothesis should state that one population proportion $\left(p_1\right)$
+        is not equal to the other population proportion $\left(p_2\right)$.</li>
+    </ul>
+    The decision could be to either reject the null hypothesis or fail to reject
+    the null hypothesis.
+    <br>
+    <b>Argument(s): </b>
+    <br>
+    <samp>successes1</samp> - the number of successes in the sample, with respect to $\left(p_1\right)$.
+    <br>
+    <samp>sampleSize1</samp> - the size of the sample, with respect to $\left(p_1\right)$.
+    <br>
+    <samp>successes2</samp> - the number of successes in the sample, with respect to $\left(p_2\right)$.
+    <br>
+    <samp>sampleSize2</samp> - the size of the sample, with respect to $\left(p_2\right)$.
+    <br>
+    <samp>alpha</samp> - the significance level ($\alpha$) of the test.
+    <br>
+    <b>Returns: </b>
+    <br>
+    the final decision of the significance test.
+  </li>
+
+
+</ul>
