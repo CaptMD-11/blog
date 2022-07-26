@@ -28,4 +28,4 @@ Now, let's fast-forward to the A$340$, Airbus' first four-engined airliner aimed
 <center><i>Singapore Airlines A$340$</i></center>
 <br>
 
-At the end of the day, Airbus' absence in the trijet market has worked out well for them. Airbus has never been much of a cargo aircraft manufacturer, so it's probably better for them to develop more efficient two-engined airliners. 
+At the end of the day, Airbus' absence in the trijet market has worked out well for them. Airbus has never been much of a cargo aircraft manufacturer, so it's probably better for them to develop more efficient two-engined airliners.  
