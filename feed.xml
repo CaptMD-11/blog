@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2022-07-26T00:54:23+00:00</updated><id>/blog/feed.xml</id><title type="html">CaptMD-11</title><subtitle>a math &amp; stats enthusiast</subtitle><entry><title type="html">Why Airbus Never Built a Trijet</title><link href="/blog/whynoairbustrijet" rel="alternate" type="text/html" title="Why Airbus Never Built a Trijet" /><published>2022-07-25T10:18:00+00:00</published><updated>2022-07-25T10:18:00+00:00</updated><id>/blog/whynoairbustrijet</id><content type="html" xml:base="/blog/whynoairbustrijet">&lt;p&gt;My thoughts on why Airbus evaded the trijet market.&lt;/p&gt;
+
+&lt;p&gt;Today, Airbus is one of the most dominant aircraft manufacturers in the commercial aviation sector. They have produced a wide range of aircraft, from short-haul narrow-body aircraft to the largest passenger airliner ever made. However, Airbus never built a three-engined airliner. Why?&lt;/p&gt;
+
+&lt;p&gt;From the beginning, Airbus has tried to outperform the competition. For instance, the A$300$ (their first aircraft) was designed to compete with the American trijets, specifically the DC-$10$ and L-$1011$ TriStar. So, it wouldn’t look good for Airbus if they developed a trijet later on.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/a300b.jpg&quot; width=&quot;500&quot; alt=&quot;photo&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;i&gt;Airbus A$300$&lt;/i&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, creating a new aircraft that would fit three engines might not have been feasible. The A$300$ was well-designed, and Airbus instead chose to slightly improve its design in subsequent aircraft models, such as the A$330$ family.&lt;/p&gt;
+
+&lt;p&gt;Now, let’s fast-forward to the A$340$, Airbus’ first four-engined airliner aimed toward the ultra-long-haul market. It was only able to achieve its range through the addition of fuel tanks. So, it makes sense that Airbus decided to go with four engines - to provide the power necessary to carry the additional weight of the fuel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/singaporea345.jpg&quot; width=&quot;500&quot; alt=&quot;photo&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;i&gt;Singapore Airlines A$340$&lt;/i&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;At the end of the day, Airbus’ absence in the trijet market has worked out well for them. Airbus has never been much of a cargo aircraft manufacturer, so it’s probably better for them to develop more efficient two-engined airliners.&lt;/p&gt;</content><author><name></name></author><summary type="html">My thoughts on why Airbus evaded the trijet market.</summary></entry><entry><title type="html">VStats First Release!</title><link href="/blog/vstatsfirstrelease" rel="alternate" type="text/html" title="VStats First Release!" /><published>2022-06-22T10:18:00+00:00</published><updated>2022-06-22T10:18:00+00:00</updated><id>/blog/vstatsfirstrelease</id><content type="html" xml:base="/blog/vstatsfirstrelease">&lt;p&gt;The product of months of work.&lt;/p&gt;
+
+&lt;p&gt;I am happy to announce the initial release of the VStats Java statistics library! I originally anticipated the library to only contain computations for one-variable statistics. However, the project has grown to support linear regression, confidence intervals, significance tests, and other statistical functions.&lt;/p&gt;
+
+&lt;p&gt;You can now download the VStats library &lt;a href=&quot;https://captmd-11.github.io/blog/statscalculator/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;. I plan on creating a GitHub Discussions page for the repository so that users can discuss any issues or concerns with the library.&lt;/p&gt;
+
+&lt;p&gt;Have fun with your statistical adventures!&lt;/p&gt;</content><author><name></name></author><summary type="html">The product of months of work.</summary></entry><entry><title type="html">Thodi RTP</title><link href="/blog/thodi_rtp" rel="alternate" type="text/html" title="Thodi RTP" /><published>2022-06-21T10:18:00+00:00</published><updated>2022-06-21T10:18:00+00:00</updated><id>/blog/thodi_rtp</id><content type="html" xml:base="/blog/thodi_rtp">&lt;p&gt;Over the weekend in Long Beach, CA.&lt;/p&gt;
+
+&lt;p&gt;Just wanted to share a violin performance I did with my friend Satvik Subbaraman on mridangam. We played a &lt;i&gt;Ragam-Thanam-Pallavi&lt;/i&gt; (RTP) in &lt;i&gt;Thodi&lt;/i&gt;.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/r09n0QxeQ9s&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;center&gt;&lt;img src=&quot;assets/images/fullthodirtp.jpg&quot; width=&quot;450&quot; alt=&quot;concert_pic&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;i&gt;A picture from the concert&lt;/i&gt;&lt;/center&gt;</content><author><name></name></author><summary type="html">Over the weekend in Long Beach, CA.</summary></entry><entry><title type="html">Implementing the Chi-Square Distribution</title><link href="/blog/implementingthechisquaredistribution-1" rel="alternate" type="text/html" title="Implementing the Chi-Square Distribution" /><published>2022-06-07T10:18:00+00:00</published><updated>2022-06-07T10:18:00+00:00</updated><id>/blog/implementingthechisquaredistribution-1</id><content type="html" xml:base="/blog/implementingthechisquaredistribution-1">&lt;p&gt;A fun learning experience!&lt;/p&gt;
+
+&lt;p&gt;While writing code for the VStats Java library, I have always wanted to include some methods featuring the $\chi^2$-distribution. Unlike the $z$-distribution, the $\chi^2$-distribution is a bit more complex, such that it contains an expression that is the output of the gamma function $(\Gamma)$.&lt;/p&gt;
+
+&lt;p&gt;The $\Gamma$ function is an important function in mathematics, since it allows us to compute the factorial of any real, positive number. Here is the formula:&lt;/p&gt;
+
+\[\Gamma(x) = \frac{1}{x} \prod_{n=1}^{\infty} \left(\frac{\left(1+\frac{1}{n}\right)^x}{1+\frac{x}{n}}\right)\]
+
+&lt;p&gt;After implementing the $\Gamma$ function in Java, the next step was to write the implementation for the $\chi^2$ function, $f$, which is as follows:&lt;/p&gt;
+
+\[f(\chi^2) = \frac{\left(\chi^2\right)^{\frac{k}{2}-1}e^{-\frac{\chi^2}{2}}}{\left(2^{\frac{k}{2}}\right)\left(\Gamma\left(\frac{k}{2}\right)\right)}\]
+
+&lt;p&gt;where $k$ represents the number of degrees of freedom. Here is the method I wrote for the $\Gamma$ function:&lt;/p&gt;
+
+&lt;pre class=&quot;s-code-block language-java&quot;&gt;
+public static double computeGammaFunction(double inputZ) {
+    double res = 1; 
+    for (int i = 1; i &amp;lt;= 1000000; i++) {
+        double numerator = Math.pow(1 + (1.0/i*1.0), inputZ); 
+        double denominator = 1.0 + (inputZ/i*1.0); 
+        res *= numerator/denominator; 
+    }
+    return res * (1/inputZ*1.0); 
+}
+&lt;/pre&gt;
+
+&lt;p&gt;and $\chi^2$-distribution:&lt;/p&gt;
+
+&lt;pre class=&quot;s-code-block language-java&quot;&gt;
+public static double computeChiSquarePDF(double chiSqrValue, int degFree) {
+    if (chiSqrValue &amp;lt; 0)
+        return 0; 
+    else {
+        double numerator = (Math.pow(chiSqrValue, (degFree/2.0)-1.0)) * (Math.pow(Math.E, -1.0*chiSqrValue/2.0)); 
+        double denominator = (Math.pow(2, degFree/2.0)) * computeGammaFunction(degFree/2.0); 
+        return numerator / denominator; 
+    }
+}
+&lt;/pre&gt;
+
+&lt;p&gt;Using these methods, I was able to write another method that computes the area under the $\chi^2$-distribution (using the Riemann sum approximation method which I spoke about in one of my earlier posts), which can be used to find $p$-values of statistical tests, etc. Here is the method:&lt;/p&gt;
+
+&lt;pre class=&quot;s-code-block language-java&quot;&gt;
+public static double computeChiSquareCDF(double lowerBound, double upperBound, int degFree) {
+    double sum = 0.0; 
+    double increment = (upperBound-lowerBound) / (Math.pow(10, 2)); 
+    for (double i = lowerBound + (increment/2.0); i &amp;lt; upperBound; i+=increment) {
+        sum += (increment * computeChiSquarePDF(i, degFree)); 
+    }
+    return sum; 
+}
+&lt;/pre&gt;
+
+&lt;p&gt;The next thing I might do for VStats before I announce its first official release is write a few more methods for running statistical tests with respect to the $\chi^2$-distribution. These include the GOF test (goodness-of-fit), homogeneity test, and independence test. Hopefully the first version of VStats will be released sometime this summer!&lt;/p&gt;</content><author><name></name></author><summary type="html">A fun learning experience!</summary></entry><entry><title type="html">Riemann Sums for Estimating Probabilities</title><link href="/blog/riemannsumprobabilitydensityfunction" rel="alternate" type="text/html" title="Riemann Sums for Estimating Probabilities" /><published>2022-06-02T10:18:00+00:00</published><updated>2022-06-02T10:18:00+00:00</updated><id>/blog/riemannsumprobabilitydensityfunction</id><content type="html" xml:base="/blog/riemannsumprobabilitydensityfunction">&lt;p&gt;Another method of approximating an integral.&lt;/p&gt;
+
+&lt;p&gt;In one of my earlier posts, I mentioned that we need to use integral calculus in order to find the area under a normal distribution. As you may recall, the formula for the normal distribution is the following, assuming $\mu=0$ and $\sigma=1$:&lt;/p&gt;
+
+\[f(z) = \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}\]
+
+&lt;p&gt;However, for functions like this taking the integral and evaluating it at $2$ bounds can be quite difficult. But, we can use another (Riemann sums) method to &lt;i&gt;approximate&lt;/i&gt; the area under the function between $2$ bounds.&lt;/p&gt;
+
+&lt;p&gt;I considered the $4$ different types of Riemann sums: left endpoint, right endpoint, midpoint, and trapezoidal. Left endpoint sums would result in an under approximation when the function is increasing. This would not work for all scenarios for the normal distribution, since the function is increasing for $z$-values below $0$ and decreasing for $z$-values above $0$. The same goes for right endpoint sums, since it would result in an over approximation when the function is increasing. Trapezoidal sums would result in an underestimate when the function is concave down (when the second derivative is negative), and an overestimate when the function is concave up (when the second derivative is positive). However, a midpoint Riemann sum (for any given point on this function) will result in an overestimate and an underestimate, assuming the lower/higher bound is already set. In effect, the overestimate and underestimate will cancel, thus leaving us with an midpoint sum value that is very close to the actual integral. Therefore, I used a midpoint Riemann sum in order to calculate probabilities under distributions in the VStats library. Here is the code:&lt;/p&gt;
+
+&lt;pre class=&quot;s-code-block language-java&quot;&gt;
+public static double computeZProbMidpointRiemann(double inputZLow, double inputZHigh) {
+
+    double sum = 0.0;
+
+    // double increment = (inputZHigh - inputZLow)/(Math.pow(10, 7));
+    double increment = 1.0 / (Math.pow(10, 7));
+
+    for (double i = (inputZLow + (increment / 2)); i &amp;lt; inputZHigh; i += increment) {
+        sum += (NormalPDF(i) * increment);
+    }
+
+    return sum;
+
+}
+&lt;/pre&gt;
+
+&lt;p&gt;This method has other applications in the VStats library. For instance, I use this method in order to compute the p-value of a significance test, which allows me to make a decision regarding the null hypothesis. In the future, I will do my best to use advanced integration techniques in order to find the exact area under the normal distribution.&lt;/p&gt;</content><author><name></name></author><summary type="html">Another method of approximating an integral.</summary></entry><entry><title type="html">Documentation for VStats</title><link href="/blog/documentationvstatspost" rel="alternate" type="text/html" title="Documentation for VStats" /><published>2022-05-11T10:18:00+00:00</published><updated>2022-05-11T10:18:00+00:00</updated><id>/blog/documentationvstatspost</id><content type="html" xml:base="/blog/documentationvstatspost">&lt;p&gt;Another update on VStats!&lt;/p&gt;
+
+&lt;p&gt;I finally decided to make VStats a Java statistics library. After experimenting with web implementations and apps, I realized that making a library would be the most viable option for users. So, here’s an update on where I’m at.&lt;/p&gt;
+
+&lt;p&gt;I have all the methods ready for the initial release, so I’m currently working on writing documentation for the library using Javadoc. Writing documentation for a library is incredibly important, as it allows users of the library to understand the funcionalities of each and every method.&lt;/p&gt;
+
+&lt;p&gt;For instance, here is the rendering of the documentation I wrote for a particular method (in VS Code):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/javadocmethodtestss.png&quot; width=&quot;700&quot; alt=&quot;graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve made all the methods in the VStats class &lt;samp&gt;static&lt;/samp&gt;, so users can directly call the methods on the class, without having to create VStats objects. This is similar to how the Java Math library works.&lt;/p&gt;
+
+&lt;p&gt;So, after I complete writing documentation for the methods I have, I will release the initial version (v$1.0$) of the library to the public. For v$1.01$, I plan to add code for $2$-sample mean and proportion confidence interval &amp;amp; significance test.&lt;/p&gt;</content><author><name></name></author><summary type="html">Another update on VStats!</summary></entry><entry><title type="html">Probability under Distributions</title><link href="/blog/probabilityunderdistributions" rel="alternate" type="text/html" title="Probability under Distributions" /><published>2022-04-06T10:18:00+00:00</published><updated>2022-04-06T10:18:00+00:00</updated><id>/blog/probabilityunderdistributions</id><content type="html" xml:base="/blog/probabilityunderdistributions">&lt;p&gt;Using integral calculus to calculate probabilities!&lt;/p&gt;
+
+&lt;p&gt;In my post about $z$-scores &amp;amp; normal distributions, I briefly mentioned on how probabilities are computed using a normal distribution. In this post, I’d like to go a little more in-depth of how the calculation actually works, in addition to how this can be applied to other distributions as well.&lt;/p&gt;
+
+&lt;p&gt;Let’s first take the normal probability density function and write it in terms of $z$ ($z$-scores), for simplicity. We will assign the value of $\mu$ to $0$, and the value of $\sigma$ to $1$. Here is our function:&lt;/p&gt;
+
+\[f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}\]
+
+&lt;p&gt;and in terms of $z$:&lt;/p&gt;
+
+\[f(z) = \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}\]
+
+&lt;p&gt;To calculate a probability, we can use calculus to integrate the normal probability density function between $2$ $z$-scores. For instance, let’s assume that we select the $z$-interval from $z=-0.5$ to $z=0.5$. Here is the definite integral that we need to compute in order to find $P(-0.5 &amp;lt; z &amp;lt; 0.5)$:&lt;/p&gt;
+
+\[P(-0.5 &amp;lt; z &amp;lt; 0.5) = \int_{-0.5}^{0.5} \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}} \space dz\]
+
+&lt;p&gt;The answer to this integral comes out to be about $0.38292$, which represents the probability that $z$ is between $-0.5$ and $0.5$.&lt;/p&gt;
+
+&lt;p&gt;Suppose we wanted to know the probability that $z$ is between the region from $0.5$ to $+\infty$. This would be represented by the following improper integral:&lt;/p&gt;
+
+\[P(z &amp;gt; 0.5) = \int_{0.5}^{+\infty} \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}} \space dz\]
+
+&lt;p&gt;And the answer comes out to be about $0.30854$, which is the result of integrating the normal probability density function between the two “bounds.”&lt;/p&gt;
+
+&lt;p&gt;What if we wanted to find a probability under, say, the $\chi^2$ distribution? We would first need to define our bounds for the integral. However, we would need to be careful with our low bound, since the minimum $\chi^2$ value for the distribution is $0$. Next, we would use the same integral calculation to calculate our probability. For this example, let’s assume our degrees of freedom is equal to $4$ (for a Goodness of Fit statistical test), and our low &amp;amp; high bounds are $7.3$ and $+\infty$, respectively. Let $k$ represent the degrees of freedom, and $\Gamma$ represent the gamma function. Here is our integral:&lt;/p&gt;
+
+\[P(\chi^2 &amp;gt; 7.3) = \int_{7.3}^{+\infty} \frac{\left(\chi^2\right)^{\frac{k}{2}-1}\cdot{e^{-\frac{\chi^2}{2}}}}{2^{\frac{k}{2}}\cdot\Gamma\left(\frac{k}{2}\right)} \space d\chi^2\]
+
+&lt;p&gt;And, our answer turns out to be about $0.12086$.&lt;/p&gt;
+
+&lt;p&gt;It’s amazing that the probabilities under distributions in statistics are computed using important calculus concepts like integration. Differential calculus (as far as I know) seems to be quite rare in statistics, but we shall see what the future unfolds!&lt;/p&gt;</content><author><name></name></author><summary type="html">Using integral calculus to calculate probabilities!</summary></entry><entry><title type="html">VStats GitHub Repository</title><link href="/blog/vstatsgithubrepo" rel="alternate" type="text/html" title="VStats GitHub Repository" /><published>2022-02-26T10:18:00+00:00</published><updated>2022-02-26T10:18:00+00:00</updated><id>/blog/vstatsgithubrepo</id><content type="html" xml:base="/blog/vstatsgithubrepo">&lt;p&gt;A home for the code in the cloud.&lt;/p&gt;
+
+&lt;p&gt;Over the past few weeks, I have been adding many Java classes to the VStats project. These classes include calculations for confidence intervals, significance tests, linear regression, sample proportions, and more. It has been an incredibly fun experience, as I have used a multitude of data structures. My plan is to continue writing code, which will further diversify the statistical functions included in the project. I still need to work on optimizing the code, however, so that the programs will run in the most efficient manner possible.&lt;/p&gt;
+
+&lt;p&gt;For fun, I wanted to share some code I wrote for computing probabilities under the standard normal distribution:&lt;/p&gt;
+
+&lt;pre class=&quot;s-code-block language-java&quot;&gt;
+public double computeFiniteZProbMidpointRiemann(double inputZLow, double inputZHigh) {
+		
+	double sum = 0.0;
+		
+	double increment = (inputZHigh - inputZLow)/(Math.pow(10, 7)); 
+		
+	for (double i = (inputZLow + (increment/2)); i &amp;lt; inputZHigh; i+= increment) {
+		sum += (NormalPDF(i) * increment); 
+	}
+		
+	return sum; 
+		
+}
+&lt;/pre&gt;
+
+&lt;p&gt;In order to make the code available to the public, I have created a repository on GitHub, which contains all the classes and a short README, which describes what the project is about. Here is a &lt;a href=&quot;https://github.com/CaptMD-11/VStats&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt; to the repository, in case you’re interested :)&lt;/p&gt;
+
+&lt;p&gt;I am also considering making an application instead of a website for VStats, so that users will still have access to all the functions, regardless of internet status.&lt;/p&gt;</content><author><name></name></author><summary type="html">A home for the code in the cloud.</summary></entry><entry><title type="html">The Maxwell-Boltzmann Distribution</title><link href="/blog/maxwellboltzmanndist" rel="alternate" type="text/html" title="The Maxwell-Boltzmann Distribution" /><published>2022-01-31T10:18:00+00:00</published><updated>2022-01-31T10:18:00+00:00</updated><id>/blog/maxwellboltzmanndist</id><content type="html" xml:base="/blog/maxwellboltzmanndist">&lt;p&gt;Probability in Physics/Chemistry!&lt;/p&gt;
+
+&lt;p&gt;The Maxwell-Boltzmann (MB) distribution describes how particles change in velocity, with respect to temperature. It illustrates that as the temperature increases, a larger proportion of the particles will travel at higher speeds. Let’s observe the following MB probability distribution:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/finalmaxboltdist.png&quot; width=&quot;500&quot; alt=&quot;graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the horizontal axis, we have speed, &lt;i&gt;x&lt;/i&gt;, and on the vertical axis, we have a probability density function, &lt;i&gt;P&lt;/i&gt;. In this particular graph, the blue distribution represents the lowest of the temperatures, the green distribution represents the highest of the temperatures, and the red distribution represents an intermediate temperature. We see that as the temperature increases, the mean speed for the particles also increases. One way this can be understood is through observing the shape of each of the distributions. If you notice, all of these distributions are skewed towards particles with higher speeds. To elaborate, if you examine the proportion of particles within different speed ranges in a given temperature, you will see that there will be a much smaller proportion of particles travelling at relatively high speeds, compared to the proportion of particles travelling at relatively low speeds. This indicates that these distributions are not symmetric - therefore these distributions are not normal.&lt;/p&gt;
+
+&lt;p&gt;“But, how do you actually know that as you increase the temperature, the mean speed of the particles also increases?” - you may ask. To answer this question, we must first analyze the skewed distribution. Let’s take a look at the following distribution, which is skewed towards higher &lt;i&gt;x&lt;/i&gt;-values, as seen in the MB distribution:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/highskeweddist.png&quot; width=&quot;700&quot; alt=&quot;formula&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We see that the mode (the most occurring value) occurs “&lt;i&gt;x&lt;/i&gt;-location” of the peak, the mean is situated closest to the skewed area, and the median is located in between the mode and the mean. Coming back to the MB distribution, as the temperature increases, the peak of the distribution increases. So, through logical reasoning, the mean, median, and mode of the speed also increase.&lt;/p&gt;
+
+&lt;p&gt;Now for the physics/chemistry description of the MB distribution. When you have a gas at a low temperature, there is a relatively high proportion of particles travelling at a slow speed, than at a higher speed. According to kinetic molecular theory, when you increase the temperature of a gas, the average kinetic energy of the particles also increases. So, there is now a higher proportion of particles travelling at faster speeds, compared to the lower temperature scenario. Going back to the shape of the probability distributions, we initially see distributions with high skew, but as the temperature increases, the distributions appear to be more symmetric. This means that the vast majority of particles are travelling at higher speeds.&lt;/p&gt;</content><author><name></name></author><summary type="html">Probability in Physics/Chemistry!</summary></entry><entry><title type="html">How I Write Mathematical Formulas</title><link href="/blog/allaboutlatex" rel="alternate" type="text/html" title="How I Write Mathematical Formulas" /><published>2022-01-17T10:18:00+00:00</published><updated>2022-01-17T10:18:00+00:00</updated><id>/blog/allaboutlatex</id><content type="html" xml:base="/blog/allaboutlatex">&lt;p&gt;Why I use $\rm\LaTeX$!&lt;/p&gt;
+
+&lt;p&gt;If you’ve seen some of my previous posts about different concepts in statistics, I provide mathematical formulas to illustrate certain ideas. I use a software called $\rm\LaTeX$, which allows me to accomplish this by writing some basic code.&lt;/p&gt;
+
+&lt;p&gt;I actually use &lt;a href=&quot;https://artofproblemsolving.com/texer&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt; neat online $\rm\LaTeX$ editor, which allows me to directly copy over the output formula to my computer.&lt;/p&gt;
+
+&lt;p&gt;For instance, suppose I wanted to write the probability density function, as shown here:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/newprobdensityfunction.png&quot; width=&quot;300&quot; alt=&quot;formula&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All I have to do is write the code that will generate the formula, and I’m done! Here is the code itself:&lt;/p&gt;
+
+&lt;pre&gt;\begin{displaymath}
+f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}
+\end{displaymath}&lt;/pre&gt;
+
+&lt;p&gt;$\rm\LaTeX$ can also be used to write formal research papers and even textbooks.&lt;/p&gt;
+
+&lt;p&gt;The syntax for the $\rm\LaTeX$ language is very simple &amp;amp; intuitive, which makes it very easy for people to learn. Thus, I would highly recommend this software, even if you are new to writing code. Here is the download &lt;a href=&quot;https://www.latex-project.org/get/&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt; to install on your computer if you’re interested.&lt;/p&gt;</content><author><name></name></author><summary type="html">Why I use $\rm\LaTeX$!</summary></entry></feed>
