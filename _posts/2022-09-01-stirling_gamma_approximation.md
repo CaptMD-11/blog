@@ -1,0 +1,32 @@
+---
+layout: post
+current: post
+cover: assets/images/gammafunction.png
+#cover: assets/images/bluebackground.jpg
+navigation: True
+title: Stirling's Method
+date: 2022-09-01 10:18:00
+tags:
+class: post-template
+subclass: 'post'
+---
+
+An incredibly accurate approximation of the $\Gamma$-function. 
+
+A few months ago, I made a post about programming the $\chi^2$-distribution. I included some code entailing the computations for the $\Gamma$-function. However, it produced a crude estimation as a result of calculating the product of many terms. Furthermore, it was inefficient, taking more than $10$ seconds to execute. This held back my progress in writing the implementations for the $\chi^2$-distribution and other statistical functions. So, I sought to write a better version of the $\Gamma$-function. 
+
+The $\Gamma$-function can be expressed in many different ways. For instance, it can be represented as a product of infinitely many terms or as an integral (shown below). 
+
+$$
+\Gamma(z) = \int_{0}^{\infty} {t^{z-1}e^{-t}} dt , \mathbb{R}(z) > 0
+$$
+
+I thought of writing the implementation for computing this integral, using Riemann sum approximations if necessary. After solving it using integration by parts, I was left with an expression that I could simply substitute the input value as the exponent of one of the terms to find the function output and then use Riemann sums to compute the integral. However, if you enter different input values, the expression you will get after using integration by parts will differ. 
+
+Then, I began researching other ways of modeling the $\Gamma$-function without the added complexity that comes with integral calculus, even if they were approximations. Thanks to the folks at Mathematics Stack Exchange, I soon came across Stirling's method of estimating the $\Gamma$-function. Here is the approximation: 
+
+$$
+\Gamma(z) \approx e^{\left[z(\ln z-1) + \frac{1}{2}(\ln(\frac{1}{z}) + \ln(2\pi)) + \frac{1}{12z} - \frac{1}{360z^3}\right]}
+$$
+
+This proved to be an incredibly accurate model of the $\Gamma$ function. Using Stirling's approximation, I have written methods that feature the $\chi^2$-distribution and Student's $t$-distribution, which are available in the latest version of VStats. 
