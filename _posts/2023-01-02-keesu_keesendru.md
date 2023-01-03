@@ -15,7 +15,7 @@ By an amazing vocalist-mridangist combo.
 
 Recently, I heard the Bhairavi Tiruppaavai (a composition of Andal) rendered by Sanjay Subrahmanyan (vocal), Nagai Sriram (violin), Palladam Ravi (mridangam), and KV Gopalakrishnan (khanjira). 
 
-Sanjay Subrahmanyan was brilliant, coming up with all sorts of captivating sangathis. Also, Palladam Ravi played really well. The way he made the shruti of the mridangam heard towards the beginning of the anupallavi was simply beautiful. I think both of them make an excellent combo. 
+Sanjay Subrahmanyan was brilliant, coming up with all sorts of captivating sangathis. Also, Palladam Ravi played really well. The way he made the shruti of the mridangam heard towards the beginning of the anupallavi was simply beautiful. I think the both of them make an excellent combo. 
 
 Here is the link to the recording: 
 
