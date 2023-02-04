@@ -11,7 +11,8 @@ baseurl: /blog/
 # Website info
 title: CaptMD-11
 description: Carnatic Musician | Stats Enthusiast | AvGeek
-cover: assets/images/sky2.jpg
+# cover: assets/images/blogbg1.jpg
+cover: assets/images/md112engine.jpg
 logo: assets/images/myLogo.png
 #logo: assets/images/blog-icon.png
 #logo_dark: assets/images/favicon.png
