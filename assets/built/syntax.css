@@ -294,8 +294,9 @@ body {
     font-style: normal;
     letter-spacing: 0;
     text-rendering: optimizeLegibility;
-    /* background: #0d1117; */
-    background-image: url("../images/blogbg1.jpg");
+    background: #0d2445;
+    /* background-image: url("../images/blogbg1.jpg"); */
+    /*THIS CHANGES THE BACKGROUND OF THE BLOG IN THE MAIN MENU (THE DARK BLUE COLOR) */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: "liga" on
