@@ -1498,7 +1498,7 @@ body {
     border: 0px solid #edf4f8;
     text-align: center;
     /* background: #1769a9; */
-    background-image: url("../images/postbg3.png");
+    background: #202020;
     /*THIS CHANGES COLOR OF THE SUBSCRIBE FORM*/
     border-radius: 7px
 }
