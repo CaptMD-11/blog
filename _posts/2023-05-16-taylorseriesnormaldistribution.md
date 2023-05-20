@@ -22,32 +22,35 @@ I started with analyzing different types of Riemann approximations, but soon rea
 
 More recently, I thought about perhaps instead using a power series in order to approximate the integral. I realized that it would make sense to begin with using a Taylor series for $e^x$ centered about $0$, since the probability function is $e$-based and is symmetric about the $y$-axis. Then, I proceeded level by level in order to create a Taylor series for the probability function, as shown below. 
 
+$$
+\begin{align}
+& e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + ... 
 
-$$
-e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + ... 
-$$
+\\
 
-$$
-e^{-\frac{z^2}{2}} = 1 + \left(-\frac{z^2}{2}\right) + \frac{\left(-\frac{z^2}{2}\right)^2}{2!} + \frac{\left(-\frac{z^2}{2}\right)^3}{3!} + \frac{\left(-\frac{z^2}{2}\right)^4}{4!} + ... 
-$$
+& e^{-\frac{z^2}{2}} = 1 + \left(-\frac{z^2}{2}\right) + \frac{\left(-\frac{z^2}{2}\right)^2}{2!} + \frac{\left(-\frac{z^2}{2}\right)^3}{3!} + \frac{\left(-\frac{z^2}{2}\right)^4}{4!} + ... 
 
-$$
-\frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}} = \frac{1}{\sqrt{2\pi}} \left( 1 + \left(-\frac{z^2}{2}\right) + \frac{\left(-\frac{z^2}{2}\right)^2}{2!} + \frac{\left(-\frac{z^2}{2}\right)^3}{3!} + \frac{\left(-\frac{z^2}{2}\right)^4}{4!} + ... \right)
-$$
+\\
 
-$$
-= \frac{1}{\sqrt{2\pi}} \left(1 - \frac{z^2}{2 \cdot 1!} + \frac{z^4}{4 \cdot 2!} - \frac{z^6}{8 \cdot 3!} + \frac{z^8}{16 \cdot 4!} - ... \right)
+& \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}} = \frac{1}{\sqrt{2\pi}} \left( 1 + \left(-\frac{z^2}{2}\right) + \frac{\left(-\frac{z^2}{2}\right)^2}{2!} + \frac{\left(-\frac{z^2}{2}\right)^3}{3!} + \frac{\left(-\frac{z^2}{2}\right)^4}{4!} + ... \right)
+
+\\
+
+& \hspace{2.7cm} = \frac{1}{\sqrt{2\pi}} \left(1 - \frac{z^2}{2 \cdot 1!} + \frac{z^4}{4 \cdot 2!} - \frac{z^6}{8 \cdot 3!} + \frac{z^8}{16 \cdot 4!} - ... \right)
+\end{align}
 $$
 
 
 Now that we have the Taylor series for the probability function, we can now easily integrate this (what is essentially a) polynomial. 
 
 $$
-\int \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}} dz = \frac{1}{\sqrt{2\pi}} \left(\frac{z}{1 \cdot 1 \cdot 0!} - \frac{z^3}{3 \cdot 2 \cdot 1!} + \frac{z^5}{5 \cdot 4 \cdot 2!} - \frac{z^7}{7 \cdot 8 \cdot 3!} + \frac{z^9}{9 \cdot 16 \cdot 4!} - ... \right)
-$$
+\begin{align}
+\int \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}} dz & = \frac{1}{\sqrt{2\pi}} \left(\frac{z}{1 \cdot 1 \cdot 0!} - \frac{z^3}{3 \cdot 2 \cdot 1!} + \frac{z^5}{5 \cdot 4 \cdot 2!} - \frac{z^7}{7 \cdot 8 \cdot 3!} + \frac{z^9}{9 \cdot 16 \cdot 4!} - ... \right)
 
-$$
-= \frac{1}{\sqrt{2\pi}} \sum_{n = 0}^{\infty} \frac{(-1)^n \cdot z^{2n+1}}{(2n+1) \cdot 2^n \cdot n!}
+\\
+
+& = \frac{1}{\sqrt{2\pi}} \sum_{n = 0}^{\infty} \frac{(-1)^n \cdot z^{2n+1}}{(2n+1) \cdot 2^n \cdot n!}
+\end{align}
 $$
 
 Also, I found the interval of convergence for this infinite series in order to check that the approximation of the integral would apply for $z \in \mathbb{R}$, which is the domain of the probability function. The following limit confirmed this, since as $n \rightarrow \infty$, the limit goes to $0$, whose absolute value is always less than $1$. Therefore, this statement is always true, and thus the interval of convergence is $z \in (-\infty, \infty)$. 
