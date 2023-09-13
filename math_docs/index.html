@@ -18,7 +18,56 @@ priority: 1
   <br>
   <br>
 
-        <a href="./files/InvolvedIntegrals1.pdf" target="_blank">Involved Integrals - $1$</a>
-        <br>
-        <a href="./files/InvolvedIntegrals2.pdf" target="_blank">Involved Integrals - $2$</a>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grid Example with White Border Lines</title>
+    <style>
+        /* Define a grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Three columns of equal width */
+            grid-gap: 0; /* No gap between grid items */
+            border-collapse: collapse; /* Collapse cell borders into a single border */
+            width: 500px; /* Set a fixed width for the grid container */
+            margin: 0 auto;
+        }
+
+        /* Style for grid items */
+        .grid-item {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid white; /* White border around each grid item */
+            background-color: #202020; /* Default background color */
+        }
+
+        /* Change background color for specific grid items */
+        .grid-item:nth-child(odd) {
+            background-color: #202020; /* Background color for odd-numbered rows */
+        }
+
+        .grid-item:nth-child(even) {
+            background-color: #202020; /* Background color for even-numbered rows */
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-item">Problem</div>
+    <div class="grid-item">Solution</div>
+
+    <div class="grid-item">$\int \cos(x) \sqrt{9 + 25\sin^2(x)} \; dx$</div>
+    <div class="grid-item"><a href="./files/InvolvedIntegrals1.pdf" target="_blank">pdf</a></div>
+
+    <div class="grid-item">$\int \frac{\sin(x)\cos(x)}{\sin^4(x) + \cos^4(x)}\; dx$</div>
+    <div class="grid-item"><a href="./files/InvolvedIntegrals2.pdf" target="_blank">pdf</a></div>
+</div>
+
+</body>
+</html>
+
+
 </center>
+
