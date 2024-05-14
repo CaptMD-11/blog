@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2024-05-14T02:06:35+00:00</updated><id>/blog/feed.xml</id><title type="html">CaptMD-11</title><subtitle>Math Student | Carnatic Musician | AvGeek</subtitle><entry><title type="html">Math Docs Section</title><link href="/blog/math_docs_section_intro" rel="alternate" type="text/html" title="Math Docs Section" /><published>2023-09-12T10:18:00+00:00</published><updated>2023-09-12T10:18:00+00:00</updated><id>/blog/math_docs_section_intro</id><content type="html" xml:base="/blog/math_docs_section_intro">&lt;p&gt;A fun project.&lt;/p&gt;
+
+&lt;p&gt;Recently, I’ve been learning how to write $\rm\LaTeX$ documents. I write these documents mostly to analyze interesting math problems I see. I created a new section on the blog, titled “Math Docs,” where I share my solutions to some of these problems.&lt;/p&gt;
+
+&lt;p&gt;Currently, I have posted some solutions to integrals. Later, I plan to tackle math tournament problems. Feel free to check it out in case you’re interested.&lt;/p&gt;</content><author><name></name></author><summary type="html">A fun project.</summary></entry><entry><title type="html">Taylor Series Approximation for the Normal Distribution</title><link href="/blog/taylorseriesnormaldistribution" rel="alternate" type="text/html" title="Taylor Series Approximation for the Normal Distribution" /><published>2023-05-16T10:18:00+00:00</published><updated>2023-05-16T10:18:00+00:00</updated><id>/blog/taylorseriesnormaldistribution</id><content type="html" xml:base="/blog/taylorseriesnormaldistribution">&lt;p&gt;An incredibly accurate and efficient method of approximating the integral of the standard normal distribution.&lt;/p&gt;
+
+&lt;p&gt;For a while now, I’ve been thinking about finding better ways of estimating the integral of the probability density function (for the standard normal distribution), as shown below.&lt;/p&gt;
+
+\[f(z) = \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}}\]
+
+&lt;p&gt;I started with analyzing different types of Riemann approximations, but soon realized that it could be quite inaccuate, since by using about a ten million subintervals, the approximate would only be accurate to around $6$-$7$ decimal places. In addition, it would also be resource-intensive for an ordinary computer to execute.&lt;/p&gt;
+
+&lt;p&gt;More recently, I thought about perhaps instead using a power series in order to approximate the integral. I realized that it would make sense to begin with using a Taylor series for $e^x$ centered about $0$, since the probability function is $e$-based and is symmetric about the $y$-axis. Then, I proceeded level by level in order to create a Taylor series for the probability function, as shown below.&lt;/p&gt;
+
+\[\begin{align}
+&amp;amp; e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + ... 
+
+\\
+
+&amp;amp; e^{-\frac{z^2}{2}} = 1 + \left(-\frac{z^2}{2}\right) + \frac{\left(-\frac{z^2}{2}\right)^2}{2!} + \frac{\left(-\frac{z^2}{2}\right)^3}{3!} + \frac{\left(-\frac{z^2}{2}\right)^4}{4!} + ... 
+
+\\
+
+&amp;amp; \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}} = \frac{1}{\sqrt{2\pi}} \left( 1 + \left(-\frac{z^2}{2}\right) + \frac{\left(-\frac{z^2}{2}\right)^2}{2!} + \frac{\left(-\frac{z^2}{2}\right)^3}{3!} + \frac{\left(-\frac{z^2}{2}\right)^4}{4!} + ... \right)
+
+\\
+
+&amp;amp; \hspace{2.7cm} = \frac{1}{\sqrt{2\pi}} \left(1 - \frac{z^2}{2 \cdot 1!} + \frac{z^4}{4 \cdot 2!} - \frac{z^6}{8 \cdot 3!} + \frac{z^8}{16 \cdot 4!} - ... \right)
+\end{align}\]
+
+&lt;p&gt;Now that we have the Taylor series for the probability function, we can now easily integrate this (what is essentially a) polynomial.&lt;/p&gt;
+
+\[\begin{align}
+\int \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}} dz &amp;amp; = \frac{1}{\sqrt{2\pi}} \left(\frac{z}{1 \cdot 1 \cdot 0!} - \frac{z^3}{3 \cdot 2 \cdot 1!} + \frac{z^5}{5 \cdot 4 \cdot 2!} - \frac{z^7}{7 \cdot 8 \cdot 3!} + \frac{z^9}{9 \cdot 16 \cdot 4!} - ... \right)
+
+\\
+
+&amp;amp; = \frac{1}{\sqrt{2\pi}} \sum_{n = 0}^{\infty} \frac{(-1)^n \cdot z^{2n+1}}{(2n+1) \cdot 2^n \cdot n!}
+\end{align}\]
+
+&lt;p&gt;Also, I found the interval of convergence for this infinite series in order to check that the approximation of the integral would apply for $z \in \mathbb{R}$, which is the domain of the probability function. The following limit confirmed this, since as $n \rightarrow \infty$, the limit goes to $0$, whose absolute value is always less than $1$. Therefore, this statement is always true, and thus the interval of convergence is $z \in (-\infty, \infty)$.&lt;/p&gt;
+
+\[\lim_{n \rightarrow \infty} \left| \frac{(-1)^{n+1} \cdot z^{2n+3}}{(2n+3) \cdot 2^{n+1} \cdot (n+1)!} \cdot \frac{(2n+1) \cdot 2^n \cdot n!}{(-1)^n \cdot z^{2n+1}} \right|\]
+
+&lt;p&gt;Hypothetically, if we were to find an exact value for this integral (assuming we take a definite integral), then we would need to evaluate the infinite series. We could find the exact sum for an infinite series if it was geometric or telescoping, but it doesn’t appear to be the case. So, I thought of further decomposing the Taylor series for the integral of the probability function into roots by taking each term of the series and setting it equal to $\frac{\frac{d^n}{dz} \cdot z^n}{n!}$, where $n$ is the indexing value of the series. Obviously, the even values of $n$ would correspond to a $\frac{d^n}{dz}$ value of $0$, since that is the only possible numeric component of the term that could “vary.”&lt;/p&gt;
+
+&lt;p&gt;Next, I wanted to analyze the progression of the absolute value of $\frac{d^n}{dz}$, since I already knew that we were dealing with an alternating series. Here below is a table that displays the values of the absolute value of $\frac{d^n}{dz}$ for the first $6$ odd values of $n$.&lt;/p&gt;
+
+&lt;table bgcolor=&quot;black&quot;&gt;
+
+    &lt;tr&gt;
+        &lt;th&gt;&lt;center&gt;$n$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$1$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$3$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$5$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$7$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$9$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$11$&lt;/center&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;th&gt;&lt;center&gt;$\left|\frac{d^n}{dz}\right|\biggr\rvert_{z=0}$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$1$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$1$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$3$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$15$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$105$&lt;/center&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;center&gt;$945$&lt;/center&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;p&gt;Ignoring the first term, the absolute value of $\frac{d^n}{dz}$ seems to first be multiplied by $3$, then by $5$, then by $7$, and so on. I tried coming up with a sequence generator for the absolute value of $\frac{d^n}{dz}$, but it turned out to be quite challenging. After collaborating with a few students in my math class, we determined the sequence generator to be $\frac{(2n)!}{n! \cdot 2^n}$, assuming that $n$ starts at $1$.&lt;/p&gt;
+
+&lt;p&gt;After substituting this into the sigma notation for the Taylor series for the integral of the probability function, here is the result:&lt;/p&gt;
+
+\[\int \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}} dz = \frac{1}{\sqrt{2\pi}} \left(z + \sum_{n=1}^{\infty} \frac{(-1)^n \cdot z^{2n+1}}{n! \cdot 2^n \cdot (2n+1)}\right)\]
+
+&lt;p&gt;The best part about using this series is that when we set the upper bound of the sum to just $5$, we get $12$ decimal places of accuracy. This makes for a much more efficient computation for a computer to handle, instead of using a Riemann sum of ten million subintervals. My next step is to find a way to find the exact value of the infinite series - no approximations. I’ll save that for another post :)&lt;/p&gt;</content><author><name></name></author><summary type="html">An incredibly accurate and efficient method of approximating the integral of the standard normal distribution.</summary></entry><entry><title type="html">SIMA LA Tyagaraja Aradhana</title><link href="/blog/simala_tyagaraja_day" rel="alternate" type="text/html" title="SIMA LA Tyagaraja Aradhana" /><published>2023-03-27T10:18:00+00:00</published><updated>2023-03-27T10:18:00+00:00</updated><id>/blog/simala_tyagaraja_day</id><content type="html" xml:base="/blog/simala_tyagaraja_day">&lt;p&gt;Over the weekend in Anaheim, CA.&lt;/p&gt;
+
+&lt;p&gt;I wanted to share a recording of me and my friend, Srivatsan Srinivasan, presenting &lt;i&gt;Raksha Bettare&lt;/i&gt;, a Bhairavi krithi, for South Indian Music Academy (SIMA) of Los Angeles as part of the Tyagaraja Aradhana.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/QUFBJlJVIio&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><summary type="html">Over the weekend in Anaheim, CA.</summary></entry><entry><title type="html">TN Seshagopalan RTP</title><link href="/blog/seshagopalanrtp" rel="alternate" type="text/html" title="TN Seshagopalan RTP" /><published>2023-03-12T10:18:00+00:00</published><updated>2023-03-12T10:18:00+00:00</updated><id>/blog/seshagopalanrtp</id><content type="html" xml:base="/blog/seshagopalanrtp">&lt;p&gt;A brilliant Shanmukhapriya.&lt;/p&gt;
+
+&lt;p&gt;Recently, I have been listening a lot of concerts by the brilliant vocalist, Madurai TN Seshagopalan. I wanted to share a &lt;i&gt;Ragam-Thanam-Pallavi&lt;/i&gt; in ragam &lt;i&gt;Shanmukhapriya&lt;/i&gt; by him and his team (Nagai Sriram on violin, Guruvayur Dorai on mridangam, and S. Karthik on ghatam) that I was hearing.&lt;/p&gt;
+
+&lt;p&gt;Here are the links to Part $1$ and Part $2$ of the RTP.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/cGPkrLzehJY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/qeAcyPSupLE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><summary type="html">A brilliant Shanmukhapriya.</summary></entry><entry><title type="html">Another Photography Session</title><link href="/blog/photo_session2" rel="alternate" type="text/html" title="Another Photography Session" /><published>2023-02-05T10:18:00+00:00</published><updated>2023-02-05T10:18:00+00:00</updated><id>/blog/photo_session2</id><content type="html" xml:base="/blog/photo_session2">&lt;p&gt;Capturing the scenes during a trip.&lt;/p&gt;
+
+&lt;p&gt;Yesterday, my friend Ayush and I went on a bike ride to take some more photos. We’re into nature photography, so we decided to bike along a scenic route and capture anything we thought was interesting. I’d like to share $2$ photos that I took during our trip:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/powerline_and_grass.jpg&quot; width=&quot;700&quot; alt=&quot;graph&quot; style=&quot;border-radius:3%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This story behind this next photo is pretty interesting. So we were at a pond and I thought of taking a reflection shot aiming at the water, with a tree as the subject. The tree would be in the frame, since the angle between the tree and the water was equal to the angle between me and water. When I tried to take the shot, the tree was upside down in the frame as expected. Ayush tried this as well, except he held the camera upside down and took the shot, thus making the tree in an “upright” position in the photo. I utilized his technique and took the picture below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/tree_water_reflection.jpg&quot; width=&quot;700&quot; alt=&quot;graph&quot; style=&quot;border-radius:3%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At first glance, it doesn’t even seem like this is a reflection picture, but as you examine closely, there are faint water ripple marks that give away the technique!&lt;/p&gt;</content><author><name></name></author><summary type="html">Capturing the scenes during a trip.</summary></entry><entry><title type="html">VCSV Release!</title><link href="/blog/vcsvrelease-copy" rel="alternate" type="text/html" title="VCSV Release!" /><published>2023-01-05T10:18:00+00:00</published><updated>2023-01-05T10:18:00+00:00</updated><id>/blog/vcsvrelease%20copy</id><content type="html" xml:base="/blog/vcsvrelease-copy">&lt;p&gt;A complementary addition to VStats.&lt;/p&gt;
+
+&lt;p&gt;Several months ago, I wrote a post about VCSV, a program that would allow users to analyze data contained inside CSV files using VStats functions. The only issue was that a large portion of VStats functions require arrays as inputs. So, I wrote VCSV, a Java library that would help with parsing the raw data into an array format.&lt;/p&gt;
+
+&lt;p&gt;You can now download the VCSV library &lt;a href=&quot;https://captmd-11.github.io/blog/vcsv/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Have fun with your statistical adventures!&lt;/p&gt;</content><author><name></name></author><summary type="html">A complementary addition to VStats.</summary></entry><entry><title type="html">Keesu Keesendru</title><link href="/blog/keesu_keesendru" rel="alternate" type="text/html" title="Keesu Keesendru" /><published>2023-01-02T10:18:00+00:00</published><updated>2023-01-02T10:18:00+00:00</updated><id>/blog/keesu_keesendru</id><content type="html" xml:base="/blog/keesu_keesendru">&lt;p&gt;By an amazing vocalist-mridangist combo.&lt;/p&gt;
+
+&lt;p&gt;Recently, I heard the Bhairavi Tiruppaavai (a composition of Andal) rendered by Sanjay Subrahmanyan (vocal), Nagai Sriram (violin), Palladam Ravi (mridangam), and KV Gopalakrishnan (khanjira).&lt;/p&gt;
+
+&lt;p&gt;Sanjay Subrahmanyan was brilliant, coming up with all sorts of captivating sangathis. Also, Palladam Ravi played really well. The way he made the shruti of the mridangam heard towards the beginning of the anupallavi was simply beautiful. I think the both of them make an excellent combo.&lt;/p&gt;
+
+&lt;p&gt;Here is the link to the recording:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/4jJ9ycAPAdc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><summary type="html">By an amazing vocalist-mridangist combo.</summary></entry><entry><title type="html">NYTimesGames Release!</title><link href="/blog/nytimesgamesrelease" rel="alternate" type="text/html" title="NYTimesGames Release!" /><published>2022-12-31T10:18:00+00:00</published><updated>2022-12-31T10:18:00+00:00</updated><id>/blog/nytimesgamesrelease</id><content type="html" xml:base="/blog/nytimesgamesrelease">&lt;p&gt;A culmination of an exciting journey.&lt;/p&gt;
+
+&lt;p&gt;In my previous post, I introduced my latest project of attempting to write some programs that would help solve the Letter Boxed and Spelling Bee &lt;a href=&quot;https://www.nytimes.com/crosswords&quot; target=&quot;_blank&quot;&gt;puzzles&lt;/a&gt; on the NY Times Games website. Well, you can now download these programs (in the form of JAR libraries) &lt;a href=&quot;https://captmd-11.github.io/blog/nytimesgames/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;I would highly recommend checking out the  &lt;a href=&quot;https://github.com/CaptMD-11/NYTimesGames#nytimesgames&quot; target=&quot;_blank&quot;&gt;&lt;samp&gt;README&lt;/samp&gt;&lt;/a&gt; for more information.&lt;/p&gt;
+
+&lt;p&gt;Have fun using these libraries and I wish everyone a happy $2023$!&lt;/p&gt;</content><author><name></name></author><summary type="html">A culmination of an exciting journey.</summary></entry><entry><title type="html">Solving The NY Times Games</title><link href="/blog/nytimes_games_code_intro_post" rel="alternate" type="text/html" title="Solving The NY Times Games" /><published>2022-11-15T10:18:00+00:00</published><updated>2022-11-15T10:18:00+00:00</updated><id>/blog/nytimes_games_code_intro_post</id><content type="html" xml:base="/blog/nytimes_games_code_intro_post">&lt;p&gt;A “puzzling” project.&lt;/p&gt;
+
+&lt;p&gt;For around a year, I’ve been playing puzzles on The NY Times website. I highly recommend &lt;a href=&quot;https://www.nytimes.com/crosswords&quot; target=&quot;_blank&quot;&gt;these&lt;/a&gt; puzzles to anyone who’s looking for something to challenge their mind.&lt;/p&gt;
+
+&lt;p&gt;Around a week back, I began coding algorithms that could be used to solve the puzzles (particularly Letter Boxed and Spelling Bee). I’ve basically dedicated a class to each puzzle so that the member variables of the class stay organized (the class names are &lt;code&gt;LetterBoxed&lt;/code&gt;, &lt;code&gt;SpellingBee&lt;/code&gt;, etc.). Here’s the &lt;a href=&quot;https://github.com/CaptMD-11/NYTimesGames&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt; to the GitHub repository if you would like to check it out.&lt;/p&gt;
+
+&lt;p&gt;The objective of Letter Boxed is to make words with letters on the sides of a square, where consecutive letters cannot be from the same side. Additionally, the game gives you targets, like “try to solve in $5$ words” or “try to solve in $6$ words.” Although you can solve the puzzle in those many words, I aim to solve it in $1$ or maximum $2$ words.&lt;/p&gt;
+
+&lt;p&gt;However, the main challenge is to obtain a word list that contains words that match up closely with the word list that NY Times uses. For now, I’m using an Oxford English Dictionary containing $400000+$ words in a text file (&lt;a href=&quot;https://github.com/dwyl/english-words/blob/master/words.txt&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;). If you find a better word list, please add it to the repository’s GitHub &lt;a href=&quot;https://github.com/CaptMD-11/NYTimesGames/discussions/1&quot; target=&quot;_blank&quot;&gt;discussion&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ll probably make the &lt;code&gt;LetterBoxed&lt;/code&gt; class into a library available on the blog pretty soon.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;SpellingBee&lt;/code&gt; class is still in its early stages of development.&lt;/p&gt;</content><author><name></name></author><summary type="html">A “puzzling” project.</summary></entry><entry><title type="html">My Venture into Photography</title><link href="/blog/intro_to_photo" rel="alternate" type="text/html" title="My Venture into Photography" /><published>2022-09-28T10:18:00+00:00</published><updated>2022-09-28T10:18:00+00:00</updated><id>/blog/intro_to_photo</id><content type="html" xml:base="/blog/intro_to_photo">&lt;p&gt;An exciting diversion.&lt;/p&gt;
+
+&lt;p&gt;A few weeks ago, my friend Ayush urged me to join him with his photography adventures. So, with my Nikon D$40$, I set out to take begin my nature photography excursions.&lt;/p&gt;
+
+&lt;p&gt;Just wanted to share some of the photos I took during our trips:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/rocks_and_stream.png&quot; width=&quot;700&quot; alt=&quot;graph&quot; style=&quot;border-radius:3%&quot; /&gt;
+&lt;img src=&quot;assets/images/leaves.png&quot; width=&quot;700&quot; alt=&quot;graph&quot; style=&quot;border-radius:3%&quot; /&gt;
+&lt;img src=&quot;assets/images/rocks_and_still_water.png&quot; width=&quot;700&quot; alt=&quot;graph&quot; style=&quot;border-radius:3%&quot; /&gt;
+&lt;img src=&quot;assets/images/z2.png&quot; width=&quot;700&quot; alt=&quot;graph&quot; style=&quot;border-radius:3%&quot; /&gt;
+&lt;img src=&quot;assets/images/tree.png&quot; width=&quot;700&quot; alt=&quot;graph&quot; style=&quot;border-radius:3%&quot; /&gt;
+&lt;img src=&quot;assets/images/grass_plant_in_field.png&quot; width=&quot;700&quot; alt=&quot;graph&quot; style=&quot;border-radius:3%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can view all our photos &lt;a href=&quot;https://photos.ayushnayak.me/&quot; target=&quot;_blank&quot;&gt;here&lt;a&gt;&lt;/a&gt;.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I hope to purchase some telephoto lens for aviation photography someday. Maybe that will open new doors :)&lt;/p&gt;</content><author><name></name></author><summary type="html">An exciting diversion.</summary></entry></feed>
