@@ -13,82 +13,97 @@ priority: 1
 ---
 
 <center>
-  This is a new category on the website. Here, you can find math documents containing solutions & explanations to various problems. 
+    This is a new category on the website. Here, you can find math documents containing solutions & explanations to
+    various problems.
 
-  <br>
-  <br>
+    <br>
+    <br>
 
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>CSS Grid Example with White Border Lines</title>
-    <style>
-        /* Define a grid container */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Three columns of equal width */
-            grid-gap: 0; /* No gap between grid items */
-            border-collapse: collapse; /* Collapse cell borders into a single border */
-            width: 500px; /* Set a fixed width for the grid container */
-            margin: 0 auto;
-        }
+    <!DOCTYPE html>
+    <html>
 
-        /* Style for grid items */
-        .grid-item {
-            padding: 20px;
-            text-align: center;
-            border: 1px solid white; /* White border around each grid item */
-            background-color: #202020; /* Default background color */
-        }
+    <head>
+        <title>CSS Grid Example with White Border Lines</title>
+        <style>
+            /* Define a grid container */
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                /* Three columns of equal width */
+                grid-gap: 0;
+                /* No gap between grid items */
+                border-collapse: collapse;
+                /* Collapse cell borders into a single border */
+                width: 500px;
+                /* Set a fixed width for the grid container */
+                margin: 0 auto;
+            }
 
-        /* Change background color for specific grid items */
-        .grid-item:nth-child(odd) {
-            background-color: #202020; /* Background color for odd-numbered rows */
-        }
+            /* Style for grid items */
+            .grid-item {
+                padding: 20px;
+                text-align: center;
+                border: 1px solid white;
+                /* White border around each grid item */
+                background-color: #202020;
+                /* Default background color */
+            }
 
-        .grid-item:nth-child(even) {
-            background-color: #202020; /* Background color for even-numbered rows */
-        }
-    </style>
-</head>
-<body>
+            /* Change background color for specific grid items */
+            .grid-item:nth-child(odd) {
+                background-color: #202020;
+                /* Background color for odd-numbered rows */
+            }
 
-<div class="grid-container">
-    <div class="grid-item">Topic</div>
-    <div class="grid-item">Document</div>
+            .grid-item:nth-child(even) {
+                background-color: #202020;
+                /* Background color for even-numbered rows */
+            }
+        </style>
+    </head>
 
-    <div class="grid-item">$\int \cos(x) \sqrt{9 + 25\sin^2(x)} \; dx$</div>
-    <div class="grid-item"><a href="./files/Integrals1.pdf" target="_blank">pdf</a></div>
+    <body>
 
-    <div class="grid-item">$\int \frac{\sin(x)\cos(x)}{\sin^4(x) + \cos^4(x)}\; dx$</div>
-    <div class="grid-item"><a href="./files/Integrals2.pdf" target="_blank">pdf</a></div>
+        <div class="grid-container">
+            <div class="grid-item">Topic</div>
+            <div class="grid-item">Document</div>
 
-    <div class="grid-item">$\int \frac{1}{x^3 - 1} \; dx$</div>
-    <div class="grid-item"><a href="./files/Integrals3.pdf" target="_blank">pdf</a></div>
+            <div class="grid-item">$\int \cos(x) \sqrt{9 + 25\sin^2(x)} \; dx$</div>
+            <div class="grid-item"><a href="./files/Integrals1.pdf" target="_blank">pdf</a></div>
 
-    <div class="grid-item">$ \DeclareMathOperator{\sech}{sech} \int \sech(x) \; dx$</div>
-    <div class="grid-item"><a href="./files/Integrals4.pdf" target="_blank">pdf</a></div>
+            <div class="grid-item">$\int \frac{\sin(x)\cos(x)}{\sin^4(x) + \cos^4(x)}\; dx$</div>
+            <div class="grid-item"><a href="./files/Integrals2.pdf" target="_blank">pdf</a></div>
 
-    <div class="grid-item">Integrals of Recursive Functions</div>
-    <div class="grid-item"><a href="./files/RecursiveFunctionIntegral.pdf" target="_blank">pdf</a></div>
+            <div class="grid-item">$\int \frac{1}{x^3 - 1} \; dx$</div>
+            <div class="grid-item"><a href="./files/Integrals3.pdf" target="_blank">pdf</a></div>
 
-    <div class="grid-item">$\pi = 4\sum_{n=0}^{\infty} {\frac{1}{2} \choose n} (-1)^n \frac{1}{2n+1}$</div>
-    <div class="grid-item"><a href="./files/Proofs1.pdf" target="_blank">pdf</a></div>
+            <div class="grid-item">$ \DeclareMathOperator{\sech}{sech} \int \sech(x) \; dx$</div>
+            <div class="grid-item"><a href="./files/Integrals4.pdf" target="_blank">pdf</a></div>
 
-    <div class="grid-item">Bernoulli Differential Equation</div>
-    <div class="grid-item"><a href="./files/ODE1.pdf" target="_blank">pdf</a></div>
+            <div class="grid-item">Integrals of Recursive Functions</div>
+            <div class="grid-item"><a href="./files/RecursiveFunctionIntegral.pdf" target="_blank">pdf</a></div>
 
-    <div class="grid-item">$n+2$ Perfect Square Proof</div>
-    <div class="grid-item"><a href="./files/Proofs2.pdf" target="_blank">pdf</a></div>
+            <div class="grid-item">$\pi = 4\sum_{n=0}^{\infty} {\frac{1}{2} \choose n} (-1)^n \frac{1}{2n+1}$</div>
+            <div class="grid-item"><a href="./files/Proofs1.pdf" target="_blank">pdf</a></div>
 
-    <div class="grid-item">$\sum_{j=0}^{n} \left(-\frac{1}{2}\right)^j = \frac{2^{n+1} + (-1)^n}{3\cdot2^n}$</div>
-    <div class="grid-item"><a href="./files/Proofs3.pdf" target="_blank">pdf</a></div>
-</div>
+            <div class="grid-item">Bernoulli Differential Equation</div>
+            <div class="grid-item"><a href="./files/ODE1.pdf" target="_blank">pdf</a></div>
 
-</body>
-</html>
+            <div class="grid-item">$n+2$ Perfect Square Proof</div>
+            <div class="grid-item"><a href="./files/Proofs2.pdf" target="_blank">pdf</a></div>
+
+            <div class="grid-item">$\sum_{j=0}^{n} \left(-\frac{1}{2}\right)^j = \frac{2^{n+1} + (-1)^n}{3\cdot2^n}$
+            </div>
+            <div class="grid-item"><a href="./files/Proofs3.pdf" target="_blank">pdf</a></div>
+
+            <div class="grid-item">Composite Factorizations</div>
+            <div class="grid-item"><a href="./files/CompositeFactorizations.pdf" target="_blank">pdf</a></div>
+        </div>
+
+    </body>
+
+    </html>
 
 
 </center>
-
